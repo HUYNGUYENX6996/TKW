@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toàn Huy Express - Trang báo uy tín VN</title>
 
-    <link href="style.css" rel="stylesheet" />
-    <link href="stylemobile.css" rel="stylesheet" media="screen and (max-width: 620px)" />
+    <link href="/style/style.css" rel="stylesheet" />
+    <link href="/style/stylemobile.css" rel="stylesheet" media="screen and (max-width: 620px)" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -20,22 +20,69 @@
     </header>
 
     <!-- Tool bar -->
-    <nav>
+    <nav class="flex">
         <left>
-            ul>li*10
+            <ul class="tools flex">
+                <li><a href="#"><p class = "fa fa-home"></p></a></li>
+                <li><a href="#">Thời sự</a></li>
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Công nghệ</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Khoa học</a></li>
+                <li><a href="#">Giáo dục</a></li>
+                <li><a href="#">Sức khỏe</a></li>
+                <li><a href="#">Thể thao</a></li>
+                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">Kinh tế</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
         </left>
 
         <right>
-
+            <ul class = "flex">
+                <li><button class="search" type="button" ><span class = "fa fa-search"></span></button></li>
+                <li><button class="login" type="button"><div><span class = "fa fa-user"></span> đăng nhập</div></button></li>
+            </ul>
         </right>
     </nav>
 
+    <aside>
+        <div class="ads">
+            <div class="ad">This is an advertisement</div>
+            <div class="ad">This is an advertisement</div>
+        </div>
+    </aside>
+
     <main>
-        
+        <div class="col15"></div>
+        <div class="contents col70">
+            <div class="content">
+                <div class="title"></div>
+                <div>
+                    <img src="" alt="news_logo">
+                    <summary></summary>
+                </div>
+            </div>
+        </div>
+        <div class="col15"></div>
     </main>
 
     <footer>
+        <div>
+            <left>
+                
+            </left>
 
+            <right>
+                <ul>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">RSS</a></li>
+                    <li>Theo dõi Huy trên <a href="https://www.facebook.com/profile.php?id=100014890874546"><p class="fa fa-facebook-square"></p></a> và Toàn trên <a href="https://www.facebook.com/Oslamelon/"><p class = "fa fa-facebook-square"></p></a></li>
+                </ul>
+            </right>
+        </div>
     </footer>
 </body>
 </html>
