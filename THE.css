@@ -166,7 +166,7 @@ div.content>h2{
 }
 
 
-.contents>img{
+.contents img{
     width: 65%;
     
 }
@@ -180,33 +180,25 @@ div.content>h2{
     margin-top: 5px;
 }
 
-div.contents{
-    width: 30%;
-    margin-left: 10px;
-    margin-right: 10px;
+.contents{
     border-right: 1px solid;
+    width: 30%;
 }
 
-div.contents > h3:first-child{
-    border-bottom: 1px solid !important;
-    color: red !important;
+div.contents div{
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
+
 
 .contentmini{
     width: 20%;
 }
 
-.contentmini div{
+div.contentmini div{
     position: relative;
-
-}
-
-div.contentmini>div  img{
-    width: 50%;
-    position: absolute;
-    top: 1px;
-    right: 1px;
-   
+    background-color: red ;
 }
 
 div.contentmini a{
@@ -215,14 +207,11 @@ div.contentmini a{
 
 }
 
-div.contentmini >div  h3{
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 50%;
-    margin: 0;
-    max-height: ;
+.contentmini img{
+    width: 100%;
 }
+
+
 
 
  /* chỉnh 2 bên */
