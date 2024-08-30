@@ -23,7 +23,7 @@ p {
 /* HEADER */
 
 header img {
-    width: 100%;
+    width: 50%;
 }
 
 header div {
@@ -56,6 +56,10 @@ nav>left li{
     border-left: 1px solid;
 }
 
+nav>left li:last-child {
+    border-right: 1px solid;
+}
+
 nav ul a:hover {
     background-color: red;
     color: white;
@@ -67,6 +71,10 @@ nav>right li {
     padding: 1rem;
 }
 
+nav>right li:last-child {
+    border-right: 1px solid;
+}
+
 /* MAIN */
 
 /* FOOTER */
@@ -74,27 +82,48 @@ nav>right li {
 footer {
     border-top: 1px solid;
     border-bottom: 1px solid;
+    justify-content: space-between;
 }
 
-footer right {
-    position: absolute;
+footer right span {
+    text-align: center;
+    align-content: center;
+    padding-left: 10px;
 }
 
-footer ul {
-    margin: 0;
-    padding: 0;
-}
-
-footer li {
+footer a {
     display:block;
+    padding: 1rem;
+}
+
+footer a:hover {
+    background-color: red;
+    color: white;
+    transition: 0.2s ease-in;
 }
 
 footer left img {
-    width: 30px;
+    width: 20px;
 }
 
+footer left {
+    align-content: center;
+}
+
+footer left {
+    border-left: 1px solid;
+}
+
+
 footer right {
-    position: relative;
-    right: 0%;
-    left: 100%;
+    border-right: 1px solid;
+    padding: 10px;
+}
+
+footer right a {
+    border-right: 1px solid;
+}
+
+footer right a:last-child {
+    border-right: 0;
 }
