@@ -20,6 +20,22 @@ p {
     margin: 0;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.col15 {
+    width: 10%;
+}
+
+.col70 {
+    width: 78%;
+}
+
 /* HEADER */
 
 header img {
@@ -71,9 +87,20 @@ nav>right li {
     padding: 1rem;
 }
 
+nav>right li:first-child {
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
 nav>right li:last-child {
     border-right: 1px solid;
 }
+
+/* SEARCH BAR */
+
+
+
+/* ADS SHOW UP */
 
 /* MAIN */
 
