@@ -37,7 +37,7 @@ nav>left>ul>li {
     border-left: 1px solid black;
     text-align: center;
     align-content: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 nav>right {
@@ -45,7 +45,7 @@ nav>right {
 }
 
 nav>right li{
-   width: 100%;
+    width: 100%;
 }
 
 nav>right button {
