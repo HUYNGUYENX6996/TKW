@@ -10,6 +10,12 @@ ul {
     list-style-type: none;
 }
 
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
 /* HEADER */
 
 header img {
@@ -33,25 +39,27 @@ nav ul {
     padding: 0;
 }
 
-nav>left>ul>li {
-    border-left: 1px solid black;
+nav ul li {
     text-align: center;
     align-content: center;
+}
+
+nav li>a {
     padding: 1rem;
 }
 
-nav>right {
-    align-content: center;
+nav>left li{
+    border-left: 1px solid;
 }
 
-nav>right li{
-    width: 100%;
+nav ul a:hover {
+    background-color: red;
+    color: white;
+    transition: 0.35s ease-in;
 }
 
-nav>right button {
-    width: 100%;
-    height: 100%;
-    border: 0px;
+nav>right li {
+    display: block;
     padding: 1rem;
 }
 
