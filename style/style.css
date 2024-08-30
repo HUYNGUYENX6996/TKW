@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 /* HEADER */
 
 header img {
@@ -55,7 +59,7 @@ nav>left li{
 nav ul a:hover {
     background-color: red;
     color: white;
-    transition: 0.35s ease-in;
+    transition: 0.2s ease-in;
 }
 
 nav>right li {
@@ -66,3 +70,31 @@ nav>right li {
 /* MAIN */
 
 /* FOOTER */
+
+footer {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+footer right {
+    position: absolute;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display:block;
+}
+
+footer left img {
+    width: 30px;
+}
+
+footer right {
+    position: relative;
+    right: 0%;
+    left: 100%;
+}
