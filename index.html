@@ -7,6 +7,7 @@
 
     <link href="/style/style.css" rel="stylesheet" />
     <link href="/style/stylemobile.css" rel="stylesheet" media="screen and (max-width: 620px)" />
+    <script src="/script/script.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -39,13 +40,13 @@
 
         <right>
             <ul class = "flex">
-                <li class = "show-search"><span class = "fa fa-search"></span></li>
-                <li class = "show-login"><div><span class = "fa fa-user"></span> đăng nhập</div></li>
+                <li id = "show-search"><span class = "fa fa-search"></span></li>
+                <li id = "show-login"><div><span class = "fa fa-user"></span> đăng nhập</div></li>
             </ul>
         </right>
     </nav>
 
-    <div class = "search hide">
+    <div class = "search" style="display: none;">
         <input type="search" class = "search-box" placeholder="Nhập từ khóa bạn muốn...">
     </div>
 
@@ -58,7 +59,7 @@
 
     <main class = "flex">
         <div class="col15"></div>
-        
+
         <div class="contents col70">
             <h1 class="title"> Khoa học - công nghệ</h1>
             <div class="relate flex">
@@ -71,7 +72,8 @@
             <div class="content">
                 <div>
                     <img src="/THE/images/zuck.jpg" alt="news_logo">
-                    <summary>ethesh</summary>
+                    <h2>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h2>
+                    <summary>Bill Gates, Mark Zuckerberg hay Jeff Bezos có cách khác nhau để nuôi dạy con cái, từ quy định thời gian sử dụng smartphone, máy tính đến làm việc nhà.</summary>
                 </div>
             </div>
         </div>
