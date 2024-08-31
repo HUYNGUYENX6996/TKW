@@ -82,19 +82,40 @@ nav ul a:hover {
     transition: 0.3s ease-in;
 }
 
-nav>right li {
+nav>right>div>div {
     display: block;
     padding: 1rem;
 }
 
-nav>right li:first-child {
+nav>right #show-search {
     background-color: lightgray;
     border-radius: 3px;
 }
 
-nav>right li:last-child {
+.search {
+    position: absolute;
+    padding: 0;
+}
+
+.search>div {
+    border-top: 10px solid red;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid green;
+    border-right: 10px solid yellow;
+    width: 0;
+    height: 0;
+}
+
+.search-box {
+    position: relative;
+    border-radius: 3px;
+    
+}
+
+nav>right #show-login {
     border-right: 1px solid;
 }
+
 
 /* SEARCH BAR */
 
