@@ -13,6 +13,8 @@ window.addEventListener("load", () => {
     let register = document.getElementById("show-register");
     let registerSh = document.querySelector(".register");
 
+    let home = document.getElementById("home");
+    
     search.addEventListener("click", () => {
         searchSh.classList.toggle("show");
         for( let ctn of contentTitle) {
@@ -52,4 +54,18 @@ window.addEventListener("load", () => {
         registerSh.classList.toggle("show");
     });
     
+    window.addEventListener("scroll", () => {
+        let top = document.documentElement.scrollTop;
+
+        if (Math.round((top*100) / (document.documentElement.clientHeight)) >= 20) {
+            home.classList.add("show");
+        }
+        else {
+            home.classList.remove("show");
+        }
+    });
+
+    home.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
 });

@@ -2,6 +2,10 @@
     display: flex;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -40,6 +44,22 @@ header div {
 
 .register.show {
     display: flex !important ;
+}
+
+/* GO TO TOP */
+
+#home {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    background-color: #e7e7e7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
 }
 
 /* NAVIGATION */
@@ -85,6 +105,7 @@ nav ul a:hover {
 nav>right>div>div {
     display: block;
     padding: 0.8rem;
+    cursor: pointer;
 }
 
 nav>right>div>div:first-child {
@@ -171,6 +192,7 @@ nav>right #show-login {
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 
 /* MAIN */
