@@ -2,9 +2,9 @@
 .flex{
     display: flex;
     justify-content: space-between;
-    
+
 }
- 
+
     /* chỉnh ảnh */
  header>img{
     width: 100%;
@@ -18,10 +18,10 @@
     /* chỉnh thanh công cụ */
 
 nav{
-    
+
     border-bottom: 1px solid;
     border-top: 1px solid;
-   
+
 }
 
  ul.menu{
@@ -30,7 +30,6 @@ nav{
     padding: 0;
 
 }
-
 
 ul.menu>li{
     border-right: 1px solid;
@@ -49,7 +48,7 @@ nav ul a:hover{
     color: red !important;
 }
 
-left>ul>li{
+right>ul>li{
     border: none !important;
 }
 
@@ -58,8 +57,6 @@ left>ul>li{
 footer ul a:hover{
     color: red !important;
 }
-
-
 
  footer{
     border-top: 1px solid ;
@@ -71,12 +68,12 @@ footer>right>ul{
 }
 
 footer>right>ul>li{
-    border-right: 1px solid;
+    border-right: 1px solid !important;
 
 }
 
  footer>right>ul>li>a{
-    display: block;  
+    display: block;
     text-decoration: none;
     color: black;
     font-size:smaller ;
@@ -87,11 +84,10 @@ footer>right>ul>li{
     border: none !important;
  }
 
-
 footer>left>span{
     margin-right: 10px ;
     font-size: smaller;
-    
+
 }
 
 footer>left{
@@ -99,6 +95,14 @@ footer>left{
 }
 
     /* chỉnh main */
+
+div.col70 > div{
+    border-bottom: 1px solid;
+}
+
+div.col70 > div:last-child{
+    border: none;
+}
 
 section{
     width: 100%;
@@ -109,13 +113,18 @@ section{
 
 .col15{
     width: 15%;
+    position: relative;
 }
+
+    /* subject */
 
 .title{
     margin-bottom: 0 ;
     border-bottom: 1px solid;
     padding-bottom: 10px;
 }
+
+    /* các mục nhỏ dưới subject */
 
 div.product>ul{
     list-style-type: none;
@@ -125,31 +134,32 @@ div.product>ul{
 }
 
 
-
 div.product>ul>li>a{
     padding: 5px 5px 0 0;
     color:black;
     text-decoration: none;
     font-size: 17px;
 }
-    
 
-div.product>ul>li{ 
+
+div.product>ul>li{
     height: 27px;
 }
 
-
+    /* nội dung chính */
 
 .content>img{
    width: 100%;
-   
+
 }
 
+
 div.content{
-   width: 50%;
+   width: 40%;
    border-right: 1px solid;
    padding-right: 12px;
 }
+
 
 div.content a{
     text-decoration: none;
@@ -165,10 +175,12 @@ div.content>h2{
     margin: 5px 0;
 }
 
+    /* nội dung giữa */
+
 
 .contents img{
     width: 65%;
-    
+    padding-left: 12px;
 }
 
 .contents a{
@@ -178,6 +190,8 @@ div.content>h2{
 
 .contents h3{
     margin-top: 5px;
+    width: 90%;
+    padding-left: 12px;
 }
 
 .contents{
@@ -185,20 +199,31 @@ div.content>h2{
     width: 30%;
 }
 
-div.contents div{
-    margin-left: 10px;
-    margin-right: 10px;
+div.contents div:first-child{
+   padding-bottom: 30px;
+   border-bottom: 1px solid;
+   margin-bottom: 12px;
+}
 
+    /* nội dung ngoài cùng */
+
+.contentmini{
+    width: 30%;
 }
 
 
-.contentmini{
-    width: 20%;
+
+.contentmini h3{
+    margin: 0;
+    width: 60%;
 }
 
 div.contentmini div{
     position: relative;
-    background-color: red ;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid;
 }
 
 div.contentmini a{
@@ -207,18 +232,24 @@ div.contentmini a{
 
 }
 
+div.contentmini> div:last-child{
+    border: none;
+}
+
 .contentmini img{
-    width: 100%;
+    width: 35%;
+    position: absolute;
+    top: 1px;
+    right: 1px;
 }
 
 
 
 
- /* chỉnh 2 bên */
+/* chỉnh 2 bên */
 
 .ads>div{
-    position: fixed;
-    color: white;
+    position: absolute;
     width: 14%;
     text-align: center;
     font-size: 3rem;
@@ -226,6 +257,7 @@ div.contentmini a{
     margin-top: 5px;
     margin-right: 0;
     border-radius: 10%;
+
 }
 
 .ads>div:first-child{
@@ -235,3 +267,14 @@ div.contentmini a{
 .ads>div:last-child{
     right: 1%;
 }
+
+    /* thằng này nằm trong div.col15 */
+
+button#TopBtn{
+    display: none;
+    position: fixed;
+    height: 40px;
+    bottom: 12.5%;
+    left: 95%;
+}
+
