@@ -6,12 +6,8 @@ window.onload = function(){
             document.getElementById("TopBtn").style.display = "none";
         }
     };
-    // document.getElementById('TopBtn').addEventListener("click", function(){
-    //     document.body.scrollTop = 0;
-    //     document.documentElement.scrollTop = 0;
-    // });
     document.getElementById('TopBtn').onclick = function() {
-        window.scrollTo({top: 0, behavior: 'smooth'}); // Cuộn lên đầu trang từ từ
+        window.scrollTo({top: 0, behavior: 'smooth'}); 
         
     };
     
