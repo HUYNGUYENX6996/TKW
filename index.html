@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="login" style="display: block;">
+    <div class="login" style="display: none;">
         <div>
             <div>
                 <div class = "flex">
@@ -24,11 +24,11 @@
                 </div>
                 <div class="flex">
                     <p>Mật khẩu:</p>
-                    <input type="password" name="" id="">
+                    <input type="password">
                 </div>
-                <div class="flex">
+                <div style="display: none;" class ="flex register">
                     <p>Nhập lại mật khẩu:</p>
-                    <input type="password" name="" id="register-box">
+                    <input type="password">
                 </div>
             </div>
             <div class = "flex">
@@ -36,10 +36,10 @@
                     <button type="button">Đăng nhập</button>
                 </div>
                 <div>
-                    <button class = "register" type="button">Đăng ký</button>
+                    <button id = "show-register" type="button">Đăng ký</button>
                 </div>
             </div>
-            <a href="">&times;</a>
+            <p id = "close-login">&times;</p>
         </div>
     </div>
 

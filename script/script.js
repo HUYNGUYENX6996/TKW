@@ -2,16 +2,23 @@ window.addEventListener("load", () => {
     let search = document.getElementById("show-search");
     let searchSh = document.querySelector(".search");
 
+    let searchBox = document.querySelector(".search-box");
+    let contentTitle = document.querySelectorAll(".content h3");
+    let contentSummary = document.querySelectorAll(".content summary")
+  
+    let login = document.getElementById("show-login");
+    let loginSh = document.querySelector(".login");
+    let loginCl = document.getElementById("close-login");
+
+    let register = document.getElementById("show-register");
+    let registerSh = document.querySelector(".register");
+
     search.addEventListener("click", () => {
         searchSh.classList.toggle("show");
         for( let ctn of contentTitle) {
             ctn.style.color = "black";
         }
     });
-    
-    let searchBox = document.querySelector(".search-box");
-    let contentTitle = document.querySelectorAll(".content h3");
-    let contentSummary = document.querySelectorAll(".content summary")
     
     searchBox.addEventListener("change", () => {
         console.log(searchBox.value);
@@ -31,6 +38,18 @@ window.addEventListener("load", () => {
             }
         }
         searchBox.value = '';
-    })
+    });
 
+    login.addEventListener("click", () => {
+        loginSh.classList.toggle("show");
+    });
+
+    loginCl.addEventListener("click", () => {
+        loginSh.classList.toggle("show");
+    });
+
+    register.addEventListener("click", () => {
+        registerSh.classList.toggle("show");
+    });
+    
 });

@@ -161,7 +161,7 @@ nav>right #show-login {
     border-radius: 3px;
 }
 
-.login>div>a {
+.login>div>p {
     color: #e7e7e7;
     font-size: 36px;
     position: absolute;
