@@ -26,17 +26,17 @@ window.addEventListener("load", () => {
         console.log(searchBox.value);
         for( let ctn of contentTitle) {
             console.log(10000);
-            ctn.style.color = "black";
+            ctn.style.color = "#2f4157";
             if (ctn.innerHTML.match(searchBox.value) && searchBox.value !== '') {
                 console.log("access");
-                ctn.style.color = "lightblue";
+                ctn.style.color = "firebrick";
             }
         }
         for( let ctnSmr of contentSummary) {
             ctnSmr.style.color = "black";
             if (ctnSmr.innerHTML.match(searchBox.value) && searchBox.value !== '') {
                 console.log("access");
-                ctnSmr.style.color = "lightblue";
+                ctnSmr.style.color = "firebrick";
             }
         }
         searchBox.value = '';
