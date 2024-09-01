@@ -38,6 +38,10 @@ header div {
     text-align: center;
 }
 
+.register.show {
+    display: flex !important ;
+}
+
 /* NAVIGATION */
 
 nav {
