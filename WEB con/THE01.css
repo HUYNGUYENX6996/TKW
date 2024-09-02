@@ -32,9 +32,93 @@
     justify-content: space-between;
 }
 
+/* HEADER */
+
+div.top {
+    background-color: #e6edf2;
+}
+
+div.top img {
+    width: 50%;
+}
+
+div.top{
+    text-align: center;
+}
+
+.register.show {
+    display: flex !important ;
+}
+
+/* NAVIGATION */
+
+nav {
+    border-top: 1px solid #2f4157;
+    border-bottom: 1px solid #2f4157;
+    justify-content: space-between;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    align-content: center;
+}
+
+nav li>a {
+    padding: 0.8rem;
+}
+
+nav>left li{
+    border-left: 1px solid #2f4157;
+}
+
+nav>left li:last-child {
+    border-right: 1px solid #2f4157;
+}
+
+nav ul a {
+    background-color: #577c8e;
+    color:#f5f0ec;
+    transition: 0.3s ease-out;
+}
+
+nav ul a:hover {
+    background-color: #2f4157;
+    color: #f5f0ec;
+    transition: 0.3s ease-in;
+}
+
+nav>right>div>div {
+    display: block;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+nav>right>div>div:first-child {
+    background-color: #577c8e;
+    color: #f5f0ec;
+    border-radius: 3px;
+}
+
+nav>right>div>div:last-child {
+    color: #2f4157;
+}
+
+.search-box {
+    border: 0;
+    margin-left: 10px;
+}
+
+nav>right #show-login {
+    border-right: 1px solid #2f4157;
+}
+
     /* chỉnh header */
 header{
-    margin-top: 230px;
     background-color:#577c8e;
     margin-bottom: 1rem;
     border-radius: 10px;
