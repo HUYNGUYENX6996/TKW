@@ -1,0 +1,257 @@
+/* #2f4157 - navy
+#577c8e - teal
+#c8dae6 - sky blue
+#f5f0ec - beige
+#fff - white */
+
+/* rgb(224, 227, 236) */
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.col20{
+    width: 20%;
+    position: relative;
+}
+
+.col2{
+    width: 2%;
+}
+
+.col60{
+    width: 60%;
+}
+
+.col80{
+    width: 80%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+div.top {
+    background-color: #e6edf2;
+}
+
+div.top img {
+    width: 50%;
+}
+
+div.top{
+    text-align: center;
+}
+
+.register.show {
+    display: flex !important ;
+}
+
+/* NAVIGATION */
+
+nav {
+    border-top: 1px solid #2f4157;
+    border-bottom: 1px solid #2f4157;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    margin: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    align-content: center;
+}
+
+nav li>a {
+    padding: 0.8rem;
+}
+
+nav>left li{
+    border-left: 1px solid #2f4157;
+}
+
+nav>left li:last-child {
+    border-right: 1px solid #2f4157;
+}
+
+nav ul a {
+    background-color: #577c8e;
+    color:#f5f0ec;
+    transition: 0.3s ease-out;
+}
+
+nav ul a:hover {
+    background-color: #2f4157;
+    color: #f5f0ec;
+    transition: 0.3s ease-in;
+}
+
+nav>right>div>div {
+    display: block;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+nav>right>div>div:first-child {
+    background-color: #577c8e;
+    color: #f5f0ec;
+    border-radius: 3px;
+}
+
+nav>right>div>div:last-child {
+    color: #2f4157;
+}
+
+.search-box {
+    border: 0;
+    margin-left: 10px;
+}
+
+nav>right #show-login {
+    border-right: 1px solid #2f4157;
+}
+
+    /* chỉnh header */
+header{
+    background-color:#577c8e;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+}
+
+div.title > div:first-child > h1{
+    padding-left: 30px;
+    color: #f5f0ec;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+div.title > div:last-child > p{
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    text-align: right;
+    color: #f5f0ec;
+
+}
+
+div.sub > h2{
+    padding-left: 30px;
+    color: #f5f0ec;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+div.sub{
+    /* padding-bottom: 5px; */
+}
+
+    /* chỉnh ảnh với chú thích ảnh */
+figure img{
+    width: 100%;
+}
+
+figure{
+    width: auto;
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+}
+
+figcaption{
+    text-align: center;
+}
+
+    /* chỉnh main */
+div p{
+    font-size: 18px;
+    margin: 0;
+    width: 80%;
+    padding-left: 15px;
+}
+
+div.col60{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+main>div.col60{
+    background-color:  #c8dae6;
+
+}
+
+b{
+    font-size: 20px;
+}
+
+    /* footer */
+
+footer>div.col60{
+    background-color: #f5f0ec;
+
+}
+
+div.cmt{
+    width: 95%;
+    height: 100px;
+    margin-top: 15px;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+div.cmt>h3{
+    margin: 15px;
+    padding-left: 15px;
+}
+
+    /* chỉnh các nút */
+button#TopBtn{
+    display: none;
+    position: fixed;
+    height: 40px;
+    bottom: 13%;
+    left: 95%;
+    cursor: pointer;
+    z-index: 99;
+    width: 50px;
+
+}
+
+button#focusmode{
+    position: fixed;
+    height: 40px;
+    bottom: 20%;
+    left: 95%;
+    cursor: pointer;
+    width: 50px;
+}
+
+button#readmode{
+    position: fixed;
+    height: 40px;
+    bottom: 27%;
+    left: 95%;
+    cursor: pointer;
+    width: 50px;
+
+}
