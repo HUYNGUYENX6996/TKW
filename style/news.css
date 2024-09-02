@@ -40,11 +40,12 @@ header {
 }
 
 header img {
-    width: 50%;
+    width: 20%;
 }
 
 header div {
     text-align: center;
+    padding: 1rem;
 }
 
 .register.show {
@@ -74,6 +75,7 @@ nav {
     border-top: 1px solid #2f4157;
     border-bottom: 1px solid #2f4157;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -225,7 +227,6 @@ main>div img {
 main>div:first-child {
     background-color: #577c8e;
     border: 1px solid #2f4157;
-    margin-top: 1rem;
     color:#f5f0ec;
 }
 

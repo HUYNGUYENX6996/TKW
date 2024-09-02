@@ -39,11 +39,12 @@ header {
 }
 
 header img {
-    width: 50%;
+    width: 20%;
 }
 
 header div {
     text-align: center;
+    padding: 1rem;
 }
 
 .register.show {
@@ -73,6 +74,7 @@ nav {
     border-top: 1px solid #2f4157;
     border-bottom: 1px solid #2f4157;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -100,13 +102,13 @@ nav>left li:last-child {
 nav ul a {
     background-color: #577c8e;
     color:#f5f0ec;
-    transition: 0.3s ease-out;
+    transition: all 0.3s;
 }
 
 nav ul a:hover {
     background-color: #2f4157;
     color: #f5f0ec;
-    transition: 0.3s ease-in;
+    transition: all 0.3s;
 }
 
 nav>right>div>div {
@@ -305,7 +307,7 @@ footer a:hover {
 }
 
 footer left img {
-    width: 20px;
+    height: 20px;
 }
 
 footer left {
