@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
     search.addEventListener("click", () => {
         searchSh.classList.toggle("show");
         for( let ctn of contentTitle) {
-            ctn.style.color = "black";
+            ctn.style.color = "#2f4157";
         }
     });
     

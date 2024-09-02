@@ -246,6 +246,11 @@ nav>right #show-login {
     color:#2f4157;
 }
 
+.feature h3:hover {
+    color: maroon;
+    transition: all 0.3s;
+}
+
 .feature summary {
     color: black;
 }
