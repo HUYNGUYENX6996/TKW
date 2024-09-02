@@ -1,0 +1,106 @@
+.col20{
+    width: 20%;
+    position: relative;
+}
+
+
+
+.col2{
+    width: 2%;
+}
+
+.col60{
+    width: 60%;
+}
+
+.col80{
+    width: 80%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    margin-top: 230px;
+}
+
+div.title > div:first-child > h1{
+    padding-left: 30px;
+}
+
+div.title > div:first-child{
+    border-right: 1px solid;
+}
+
+div.title > div:last-child > p{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    text-align: right;
+}
+
+div.title{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+
+}
+
+div.sub > h2{
+    padding-left: 30px;
+
+}
+
+div.sub{
+    border-bottom: 1px solid;
+}
+
+div p{
+    font-size: 18px;
+    margin: 0;
+    width: 80%;
+    padding-left: 15px;
+}
+
+figure img{
+    width: 80%;
+}
+
+figure{
+    width: 100%;
+    margin-left: 15px;
+}
+
+div.col60{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+b{
+    font-size: 20px;
+}
+
+div.cmt{
+    width: 95%;
+    height: 100px;
+    margin-top: 15px;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+div.cmt>h3{
+    margin: 15px;
+    padding-left: 15px;
+}
+
+button#TopBtn{
+    display: none;
+    position: fixed;
+    height: 40px;
+    bottom: 13%;
+    left: 95%;
+    cursor: pointer;
+    z-index: 99;
+}

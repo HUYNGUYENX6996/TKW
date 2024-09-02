@@ -1,6 +1,6 @@
 window.onload = function(){
     window.onscroll = function() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        if ( document.documentElement.scrollTop > 30) {
             document.getElementById("TopBtn").style.display = "block";
         } else {
             document.getElementById("TopBtn").style.display = "none";
@@ -8,7 +8,6 @@ window.onload = function(){
     };
     document.getElementById('TopBtn').onclick = function() {
         window.scrollTo({top: 0, behavior: 'smooth'}); 
-        
     };
     
 } 

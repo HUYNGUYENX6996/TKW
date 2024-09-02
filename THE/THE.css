@@ -276,5 +276,6 @@ button#TopBtn{
     height: 40px;
     bottom: 12.5%;
     left: 95%;
+    cursor: pointer;
 }
 
