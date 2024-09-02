@@ -79,6 +79,7 @@ figure{
 }
 
 figcaption{
+    
     text-align: center;
 }
 
@@ -89,6 +90,8 @@ div p{
     width: 80%;
     padding-left: 15px;
 }
+
+
 
 div.col60{
     border-left: 1px solid;
