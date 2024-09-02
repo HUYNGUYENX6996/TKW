@@ -1,9 +1,15 @@
+/* #2f4157 - navy
+#577c8e - teal
+#c8dae6 - sky blue
+#f5f0ec - beige
+#fff - white */
+
+/* rgb(224, 227, 236) */
+
 .col20{
     width: 20%;
     position: relative;
 }
-
-
 
 .col2{
     width: 2%;
@@ -22,6 +28,7 @@
     justify-content: space-between;
 }
 
+    /* chỉnh header */
 header{
     margin-top: 230px;
 }
@@ -56,13 +63,7 @@ div.sub{
     border-bottom: 1px solid;
 }
 
-div p{
-    font-size: 18px;
-    margin: 0;
-    width: 80%;
-    padding-left: 15px;
-}
-
+    /* chỉnh ảnh với chú thích ảnh */
 figure img{
     width: 80%;
 }
@@ -71,6 +72,15 @@ figure{
     width: 100%;
     margin-left: 15px;
 }
+
+    /* chỉnh main */
+div p{
+    font-size: 18px;
+    margin: 0;
+    width: 80%;
+    padding-left: 15px;
+}
+
 
 div.col60{
     border-left: 1px solid;
@@ -95,6 +105,7 @@ div.cmt>h3{
     padding-left: 15px;
 }
 
+    /* chỉnh các nút */
 button#TopBtn{
     display: none;
     position: fixed;
@@ -103,4 +114,25 @@ button#TopBtn{
     left: 95%;
     cursor: pointer;
     z-index: 99;
+    width: 50px;
+
+}
+
+button#focusmode{
+    position: fixed;
+    height: 40px;
+    bottom: 20%;
+    left: 95%;
+    cursor: pointer;
+    width: 50px;
+}
+
+button#readmode{
+    position: fixed;
+    height: 40px;
+    bottom: 27%;
+    left: 95%;
+    cursor: pointer;
+    width: 50px;
+
 }
