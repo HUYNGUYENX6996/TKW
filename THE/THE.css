@@ -45,7 +45,9 @@ ul.menu>li>a{
     text-decoration: none;
     color: inherit;
     font-size: larger;
-    padding: 17px;
+    padding: 15px 15px 10px 15px;
+    text-align: center;
+    height: 35px;
 }
 
 nav ul a:hover{
