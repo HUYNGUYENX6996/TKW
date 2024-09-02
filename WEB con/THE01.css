@@ -36,36 +36,39 @@
 header{
     margin-top: 230px;
     background-color:#577c8e;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
 }
 
 div.title > div:first-child > h1{
     padding-left: 30px;
-}
-
-div.title > div:first-child{
-    border-right: 1px solid;
+    color: #f5f0ec;
+    font-size: 15px;
+    margin-bottom: 0;
 }
 
 div.title > div:last-child > p{
     position: absolute;
-    right: 5%;
-    top: 10%;
+    bottom: 1%;
+    right: 2%;
     text-align: right;
-}
-
-div.title{
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+    color: #f5f0ec;
 
 }
 
 div.sub > h2{
     padding-left: 30px;
-
+    color: #f5f0ec;
+    font-size: 24px;
+    margin-top: 5px;
+    padding-bottom: 10px;
 }
 
 div.sub{
-    border-bottom: 1px solid;
+    /* padding-bottom: 5px; */
 }
 
     /* chỉnh ảnh với chú thích ảnh */
@@ -74,8 +77,12 @@ figure img{
 }
 
 figure{
-    width: 80%;
-    margin-left: 15px;
+    width: auto;
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
 }
 
 figcaption{
