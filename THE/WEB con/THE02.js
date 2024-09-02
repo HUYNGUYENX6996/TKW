@@ -1,10 +1,21 @@
-window.addEventListener("load", () => {
+window.onload = function(){
+    window.onscroll = function() {
+        if ( document.documentElement.scrollTop > 30) {
+            document.getElementById("TopBtn").style.display = "block";
+        } else {
+            document.getElementById("TopBtn").style.display = "none";
+        }
+    };
+    document.getElementById('TopBtn').onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'}); 
+    };
+    
     let search = document.getElementById("show-search");
     let searchSh = document.querySelector(".search");
 
     let searchBox = document.querySelector(".search-box");
     let contentTitle = document.querySelectorAll(".content h3");
-    let contentSummary = document.querySelectorAll(".content p")
+    let contentSummary = document.querySelectorAll(".content summary")
   
     let login = document.getElementById("show-login");
     let loginSh = document.querySelector(".login");
@@ -13,15 +24,13 @@ window.addEventListener("load", () => {
     let register = document.getElementById("show-register");
     let registerSh = document.querySelector(".register");
 
-    let home = document.getElementById("home");
-    
     search.addEventListener("click", () => {
         searchSh.classList.toggle("show");
         for( let ctn of contentTitle) {
             ctn.style.color = "black";
         }
     });
-    
+
     searchBox.addEventListener("change", () => {
         console.log(searchBox.value);
         for( let ctn of contentTitle) {
@@ -53,19 +62,5 @@ window.addEventListener("load", () => {
     register.addEventListener("click", () => {
         registerSh.classList.toggle("show");
     });
-    
-    window.addEventListener("scroll", () => {
-        let top = document.documentElement.scrollTop;
+} 
 
-        if (Math.round((top*100) / (document.documentElement.clientHeight)) >= 20) {
-            home.classList.add("show");
-        }
-        else {
-            home.classList.remove("show");
-        }
-    });
-
-    home.addEventListener("click", () => {
-        document.documentElement.scrollTop = 0;
-    });
-});
