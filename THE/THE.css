@@ -10,11 +10,12 @@
 }
 
     /* chỉnh ảnh */
- header>img{
-    width: 100%;
+ header img{
+    width: 50%;
  }
 
  header>div{
+    width: 100%;
     display: flex;
     justify-content: center;
  }
