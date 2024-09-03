@@ -52,6 +52,10 @@ header div {
     display: flex !important ;
 }
 
+.highlight {
+    font-weight: bold;
+}
+
 /* FUNCTION BUTTON */
 
 #home {

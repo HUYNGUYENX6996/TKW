@@ -19,6 +19,8 @@ window.addEventListener("load", () => {
 
     let nav = document.querySelector("nav");
     let sticky = nav.offsetTop;
+
+    let bionic = document.getElementById("bionic");
     
     // Search function:
 
@@ -97,6 +99,48 @@ window.addEventListener("load", () => {
         }
         else {
             nav.classList.remove("sticky");
+        }
+    });
+
+    // Bionic mode:
+
+    let bionicAdded = false;
+    bionic.addEventListener("click", () => {
+        if (bionicAdded === false) {
+            for (let ctnSmr of contentSummary) {
+                let text = ctnSmr.textContent;
+                console.log(text);
+    
+                let words = text.split(' ');
+                
+                // .map method is a way to have each element go through a function
+                let highLightWords = words.map(function (word) {
+                    let length = word.length;
+                    let halfLength;
+    
+                    if (length % 2 === 0) {
+                        halfLength = length/2;
+                    }
+                    else {
+                        halfLength = Math.floor(length / 2) + 1;
+                    }
+    
+                    let firstPart = word.substring(0, halfLength);
+                    let secondPart = word.substring(halfLength);
+        
+                    return `<span class="highlight">${firstPart}</span>${secondPart}`;
+                });
+    
+                
+                ctnSmr.innerHTML = highLightWords.join(' ');
+                bionicAdded = true;
+            }
+        }
+        else {
+            let highlighted = document.querySelectorAll(".content p span");
+            for (let hlt of highlighted) {
+                hlt.classList.toggle("highlight");
+            }
         }
     });
 });

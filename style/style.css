@@ -32,6 +32,10 @@ body {
     margin: 0;
 }
 
+.highlight {
+    font-weight: bold;
+}
+
 /* HEADER */
 
 header {
