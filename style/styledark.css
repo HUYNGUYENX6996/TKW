@@ -1,0 +1,404 @@
+.flex {
+    display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    color:#c8dae6;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.show {
+    display: block !important;
+}
+
+body {
+    margin: 0;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+}
+
+header img {
+    width: 20%;
+}
+
+header div {
+    text-align: center;
+    padding: 1rem;
+}
+
+.register.show {
+    display: flex !important ;
+}
+
+/* FUNCTION BUTTON */
+
+#home {
+    position: fixed;
+    right: 16px;
+    bottom: 64px;
+    background-color: #2f4157;
+    color: #f5f0ec;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@keyframes shlow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#home.show {
+    animation: shlow 0.5s ease-in-out;
+}
+
+#theme {
+    position: fixed;
+    right: 16px;
+    bottom: 128px;
+    background-color: #2f4157;
+    color: #f5f0ec;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+#theme:hover {
+    background-color: #2f4157;
+    color: #f5f0ec;
+    transform: rotate(180deg);
+}
+
+.dark {
+    background-color: #fff !important;
+    color: #000 !important;
+    transform: rotate(180deg);
+}
+
+#bionic {
+    position: fixed;
+    right: 16px;
+    bottom: 192px;
+    background-color: #2f4157;
+    color: #f5f0ec;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+nav {
+    border-top: 1px solid #2f4157;
+    border-bottom: 1px solid #2f4157;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    align-content: center;
+}
+
+nav li>a {
+    padding: 0.8rem;
+}
+
+nav>left li{
+    border-left: 1px solid #2f4157;
+}
+
+nav>left li:last-child {
+    border-right: 1px solid #2f4157;
+}
+
+nav ul a {
+    background-color: #577c8e;
+    color:#f5f0ec;
+    transition: all 0.3s;
+}
+
+nav ul a:hover {
+    background-color: #2f4157;
+    color: #f5f0ec;
+    transition: all 0.3s;
+}
+
+nav>right>div>div {
+    display: block;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+nav>right>div>div:first-child {
+    background-color: #577c8e;
+    color: #f5f0ec;
+    border-radius: 3px;
+}
+
+nav>right>div>div:last-child {
+    color: #2f4157;
+    background-color: #fff;
+}
+
+.search-box {
+    border: 0;
+    margin-left: 10px;
+}
+
+nav>right #show-login {
+    border-right: 1px solid #2f4157;
+}
+
+/* ADS */
+
+.ads {
+    display: none;
+}
+
+/* LOGIN */
+
+.login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(78, 78, 78, 0.4);
+    z-index: 1;
+}
+
+.login>div {
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(225, 225, 225);
+    border: 1px solid #2f4157;
+    border-radius: 3px;
+}
+
+.login>div>div:first-child {
+    height: 75%;
+    align-content: center;
+    border-bottom: 1px solid #2f4157;
+}
+
+.login>div>div:first-child div {
+    padding: 1rem;
+}
+
+.login>div>div:first-child input {
+    width: 60%;
+    border-radius: 3px;
+}
+
+.login>div>div:first-child p {
+    width: 40%;
+    color: #2f4157;
+}
+
+.login>div>div.flex {
+    height: 25%;
+}
+
+.login>div>div.flex>div {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+.login>div>div.flex>div>button {
+    width: 40%;
+    height: 40%;
+    background-color: #577c8e;
+    color: #f5f0ec;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.login>div>p {
+    color: #2f4157;
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+.content {
+    margin-bottom: 10px;
+}
+
+.features {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #2f4157;
+    background-color: #c8dae6;
+    padding-bottom: 0.5rem;
+}
+
+.features>h1 {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0;
+    border-bottom: 1px solid #2f4157;
+    color: #2f4157;
+}
+
+.relate>a {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: #2f4157;
+}
+
+.feature img {
+    width: 100%;
+}
+
+.feature h3 {
+    color:#2f4157;
+}
+
+.feature h3:hover {
+    color: maroon;
+    transition: all 0.3s;
+}
+
+.feature summary {
+    color: black;
+}
+
+.feature>div {
+    padding-right: 1rem;
+    border-right: 1px solid #2f4157;
+    margin-right: 1rem;
+    width: 35%;
+}
+
+.feature>div:first-child {
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.feature>div:first-child h3 {
+    font-size: 24px;
+}
+
+.feature>div:last-child {
+    padding-right: 0;
+    border-right: 0;
+    width: 15%;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #2f4157;
+    border-bottom: 1px solid #2f4157;
+    background-color: #577c8e;
+    justify-content: space-between;
+}
+
+footer right span {
+    text-align: center;
+    align-content: center;
+    padding-left: 10px;
+    color: #c8dae6;
+}
+
+footer a {
+    display:block;
+    padding: 0.7rem;
+}
+
+footer a:hover {
+    background-color: #2f4157;
+    color: #f5f0ec;
+    transition: 0.2s ease-in;
+}
+
+footer left img {
+    height: 20px;
+}
+
+footer left {
+    align-content: center;
+}
+
+footer left {
+    border-left: 1px solid #2f4157;
+}
+
+footer right {
+    border-right: 1px solid #2f4157;
+    padding: 0.3rem;
+}
+
+footer right a:first-child {
+    border-left: 1px solid #2f4157;
+}
+
+footer right a {
+    border-right: 1px solid #2f4157;
+}
+
+footer right a:last-child {
+    border-right: 0;
+}

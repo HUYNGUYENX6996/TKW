@@ -88,10 +88,27 @@ window.addEventListener("load", () => {
     });
 
     // Dark theme function:
+
+    window.addEventListener("load", () => {
+        localStorage.setItem("dark-mode", "false");
+
+    });
+    let darkEnable = false;
     theme.addEventListener("click", () => {
-        let styleDark = document.querySelector("head>link");
-        theme.classList.toggle("dark");
-        console.warn(styleDark);
+        let styleDef = document.querySelector("head>link");
+
+        if (darkEnable) {
+            theme.classList.remove("dark");
+            console.warn(styleDef);
+            darkEnable = false;
+            styleDef.href = "/style/style.css";
+        }
+        else {
+            theme.classList.add("dark");
+            console.warn(styleDef);
+            darkEnable = true;
+            styleDef.href = "/style/styledark.css";
+        }
     });
 
     //
