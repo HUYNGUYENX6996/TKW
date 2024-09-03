@@ -52,12 +52,55 @@ header div {
     display: flex !important ;
 }
 
-/* GO TO TOP */
+/* FUNCTION BUTTON */
 
 #home {
     position: fixed;
     right: 16px;
     bottom: 64px;
+    background-color: #2f4157;
+    color: #f5f0ec;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#theme {
+    position: fixed;
+    right: 16px;
+    bottom: 128px;
+    background-color: #2f4157;
+    color: #f5f0ec;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+#theme:hover {
+    background-color: #2f4157;
+    color: #f5f0ec;
+    transform: rotate(180deg);
+}
+
+.dark {
+    background-color: #fff !important;
+    color: #000 !important;
+    transform: rotate(180deg);
+}
+
+#bionic {
+    position: fixed;
+    right: 16px;
+    bottom: 192px;
     background-color: #2f4157;
     color: #f5f0ec;
     width: 50px;
