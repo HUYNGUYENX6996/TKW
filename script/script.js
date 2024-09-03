@@ -89,31 +89,37 @@ window.addEventListener("load", () => {
 
     // Dark theme function:
 
-    window.addEventListener("load", () => {
+    let styleDef = document.querySelector("head>link");
+
+    if (localStorage.getItem("dark-mode") === "true") {
+        theme.classList.add("dark");
+        console.warn(styleDef);
+        styleDef.href = "/style/styledark.css";
+        localStorage.setItem("dark-mode", "true");
+    }
+    else {
+        theme.classList.remove("dark");
+        console.warn(styleDef);
+        styleDef.href = "/style/style.css";
         localStorage.setItem("dark-mode", "false");
+    }
+    
 
-    });
-    let darkEnable = false;
     theme.addEventListener("click", () => {
-        let styleDef = document.querySelector("head>link");
 
-        if (darkEnable) {
+        if (localStorage.getItem("dark-mode") === "true") {
             theme.classList.remove("dark");
             console.warn(styleDef);
-            darkEnable = false;
             styleDef.href = "/style/style.css";
+            localStorage.setItem("dark-mode", "false");
         }
         else {
             theme.classList.add("dark");
             console.warn(styleDef);
-            darkEnable = true;
             styleDef.href = "/style/styledark.css";
+            localStorage.setItem("dark-mode", "true");
         }
     });
-
-    //
-    //
-    //
 
     // Fixed nav bar: 
 
