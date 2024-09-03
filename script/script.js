@@ -84,7 +84,9 @@ window.addEventListener("load", () => {
 
     // Dark theme function:
     theme.addEventListener("click", () => {
+        let styleDark = document.querySelector("head>link");
         theme.classList.toggle("dark");
+        console.warn(styleDark);
     });
 
     //
