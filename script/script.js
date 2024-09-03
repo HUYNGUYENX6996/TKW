@@ -9,18 +9,23 @@ window.addEventListener("load", () => {
     let login = document.getElementById("show-login");
     let loginSh = document.querySelector(".login");
     let loginCl = document.getElementById("close-login");
-
+    
     let register = document.getElementById("show-register");
     let registerSh = document.querySelector(".register");
-
+    
     let home = document.getElementById("home");
-
+    
     let theme = document.getElementById("theme");
-
+    
     let nav = document.querySelector("nav");
     let sticky = nav.offsetTop;
-
+    
     let bionic = document.getElementById("bionic");
+    
+    let signIn = document.getElementById("sign-in");
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+    let rePassword = document.getElementById("re-password");
     
     // Search function:
 
@@ -145,4 +150,41 @@ window.addEventListener("load", () => {
             }
         }
     });
+
+    // Login function:
+
+    signIn.addEventListener("click", () => {
+        if (registerSh.classList.contains("show")) {
+            if(password.value === rePassword.value && rePassword !== '') {
+                if (username.value !== '') {
+                    alert("Bạn đã đăng ký thành công!!");
+                    localStorage.setItem("name", username.value);
+                    localStorage.setItem("password", password.value);
+                }
+                else {
+                    alert("Vui lòng nhập tên đăng nhập");
+                }
+            }
+            else {
+                alert("Vui lòng kiểm tra lại mật khẩu");
+            }
+        }
+        else {
+            if (localStorage.getItem("name") === (username.value)) {
+                if (localStorage.getItem("password") === (password.value)) {
+                    alert("Bạn đã đăng nhập thành công!");
+                }
+                else if (password.value === '') {
+                    alert("Hãy nhập mật khẩu!");
+                }
+                else {
+                    alert("Mật khẩu không hợp lệ!");
+                }
+            }
+            else {
+                alert("Vui lòng nhập lại tên đăng nhập!");
+            }
+        }
+    });
+
 });
