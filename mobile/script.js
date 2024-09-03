@@ -187,4 +187,18 @@ window.addEventListener("load", () => {
         }
     });
 
+    
 });
+
+
+function Menubar() {
+    const Tools = document.querySelector(".tools");
+
+    if (Tools.classList.contains("active")) {
+        Tools.classList.remove("active");
+        Tools.style.maxHeight = "0";
+    } else {
+        Tools.classList.add("active");
+        Tools.style.maxHeight = Tools.scrollHeight + "px";
+    }
+}
