@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa thạch bò biển tiết lộ khả năng tàn sát của đối thủ</title>
+
+    <link href="/style/news.css" rel="stylesheet" />
+    <link href="/style/stylemobile.css" rel="stylesheet" media="screen and (max-width: 1220px)" />
+    <script src="/script/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Function button -->
+    <div title="toggle dark mode" style="display: block;" id="theme"><i class="fa fa-adjust"></i></div>
+    <div title="bionic mode" style="display: block;" id="bionic"><i class="fa-solid fa-arrows-to-eye"></i></div>
+    <div title="go to top" style = "display: none;" id = "home"><i class="fa-solid fa-arrow-up"></i></div>
+    
+    <!-- Login table -->
+    <div class="login" style="display: none;">
+        <div>
+            <div>
+                <div class = "flex">
+                    <p>Tên đăng nhập:</p>
+                    <input id = "username" type = "text">
+                </div>
+                <div class="flex">
+                    <p>Mật khẩu:</p>
+                    <input id = "password" type="password">
+                </div>
+                <div style="display: none;" class ="flex register">
+                    <p>Nhập lại mật khẩu:</p>
+                    <input id = "re-password" type="password">
+                </div>
+            </div>
+            <div class = "flex">
+                <div>
+                    <button id = "sign-in" type="button">Đăng nhập</button>
+                </div>
+                <div>
+                    <button id = "show-register" type="button">Đăng ký</button>
+                </div>
+            </div>
+            <p id = "close-login">&times;</p>
+        </div>
+    </div>
+
+    <!-- Toan Huy Express's Logo -->
+    <header>
+        <div><a href="/index.html"><img src="images/the-high-resolution-logo-transparent.png" alt="logo"></a></div>
+    </header>
+
+    <!-- Tool bar -->
+    <nav class="flex">
+        <!-- biểu tượng menu -->
+        <div class="menu-icon" onclick="Menubar()">
+            <i class="fa-solid fa-bars" ></i>
+         </div>
+        <left>
+            <ul class="tools flex">
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Công nghệ</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Khoa học</a></li>
+                <li><a href="#">Giáo dục</a></li>
+                <li><a href="#">Sức khỏe</a></li>
+                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">Kinh tế</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+        </left>
+
+        <right class = "flex">
+            <div class = "flex">
+                <div class = "flex">
+                    <span id = "show-search" class = "fa fa-search"></span>
+                    <div class = "search" style="display: none;">
+                        <input type="search" class = "search-box" placeholder="Nhập từ khóa bạn muốn...">
+                    </div>
+                </div>
+                
+                <div id = "show-login"><span class = "fa fa-user"></span> Đăng nhập</div>
+            </div>
+        </right>
+    </nav>
+
+    <main>
+        <div>
+            <div class="flex">
+                <div>
+                    <p>Khoa học - công nghệ</p>
+                </div>
+                <div>
+                    <p>9:35 02/09/2024</p>
+                </div>
+            </div>
+            <div class="title">
+                <h1>HÓA THẠCH BÒ BIỂN TIẾT LỘ KHẢ NĂNG TÀN SÁT CỦA ĐỐI THỦ</h1>
+            </div>
+        </div>
+
+        <div >
+            <div class="content">
+                <figure class="">
+                    <img src="/images/hoathach.jpg" alt="Hóa thạch"/>
+                    <figcaption>Minh họa bò biển cổ đại bị cá sấu tấn công, trong khi cá mập bơi gần đó để chờ thời cơ. Ảnh: Jaime Bran Sarmiento</figcaption>
+                </figure>
+                
+                <div>
+                    <br>
+                    <p>
+                        Venezuela_Hóa thạch bò biển niên đại 20 triệu năm có những vết răng của cả cá sấu lẫn cá mập, hé lộ chuyến săn mồi dữ dội thời cổ đại.
+                    </p>
+                    <br>
+                    <p>
+                        Các nhà khoa học phát hiện hóa thạch một con bò biển xấu số thuộc chi Culebratherium đã tuyệt chủng, họ hàng của loài bò biển hiện đại, ở Venezuela, New Atlas hôm 29/8 đưa tin. Hóa thạch chỉ gồm một phần hộp sọ và vài đốt sống, nhưng cũng đủ để kể lại câu chuyện về số phận của nó 20 triệu năm trước.
+                    </p>
+                    <br>
+                    <p>
+                        Bò biển cổ đại có ba vết thủng sâu trên mõm, rộng tới 8 mm, được xác định là do cá sấu gây ra. Đây là những vết thủng gọn gàng, đâm thẳng vào và rút ra, nghĩa là cá sấu đã cắn xuống rồi nhả ra, có thể lặp lại vài lần. Vị trí vết cắn cho thấy, có khả năng nó đang cố gắng làm con mồi ngạt thở.
+                    </p>
+                    <br>
+                    <p>
+                        Khi cách này không hiệu quả, cá sấu thay đổi chiến thuật. Một loạt vết cắn khác với các vết thủng tròn tương tự dẫn đến những tổn thương lớn trên xương, ngoài ra còn có nhiều vết khía và vết cắt. Điều này cho thấy cá sấu đã thực hiện cú vặn xoắn tử thần với bò biển, tuyệt chiêu mà cá sấu hiện đại cũng sử dụng để kết liễu con mồi. Cụ thể, chúng sẽ dùng bộ hàm cực khỏe để ngoạm chặt con mồi rồi tự xoay mình để xẻ thịt.
+                    </p>
+                    <br>
+                    <p>
+                        Nhóm nghiên cứu còn phát hiện bộ dấu răng thứ ba nằm rải rác trên xương bò biển trông hoàn toàn khác. Đó là những đường dài và hẹp, để lại những lỗ hình chữ V trên xương - dấu hiệu nhận biết của răng cá mập. Một chiếc răng cá mập thậm chí còn mắc lại trong cổ bò biển, cho phép nhóm nghiên cứu xác định kẻ tấn công là họ hàng đã tuyệt chủng của cá mập hổ. Tóm lại, có vẻ cá sấu đã giết chết con mồi và ăn no, sau đó cá mập lao tới nhặt nhạnh những gì còn sót lại.
+                    </p>
+                    <br>
+                    <p>
+                        "Phát hiện của chúng tôi là một trong số ít bằng chứng về việc nhiều kẻ đi săn cùng tấn công một con mồi, cung cấp thông tin về mạng lưới chuỗi thức ăn ở khu vực này trong kỷ Miocen", chuyên gia Aldo Benites-Palomino tại Đại học Zurich, tác giả chính của nghiên cứu, cho biết. Nghiên cứu mới được công bố trên tạp chí Vertebrate Paleontology
+                    </p>
+                    <br>
+                            
+                    <p style="text-align: right;"> <b>Thu Thảo</b> (Theo New Atlas)</p>
+                
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class = "flex">
+        <left>
+            <a href="/index.html" class = "flex">
+                <span>Báo điện tử</span>
+                <img src="/images/the-high-resolution-logo-white-transparent.png" alt="Logo">
+            </a>
+        </left>
+        
+        <right>
+            <div class = "flex">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">RSS</a> 
+                    <span>Theo dõi THExpress trên</span>
+                    <a href="https://www.facebook.com/Oslamelon/"><p class = "fa fa-facebook-square"></p></a>
+            </div>
+        </right>
+    </footer>
+</body>
+</html>

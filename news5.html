@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk hé lộ kế hoạch Internet vệ tinh cho smartphone</title>
+
+    <link href="/style/news.css" rel="stylesheet" />
+    <link href="/style/stylemobile.css" rel="stylesheet" media="screen and (max-width: 1220px)" />
+    <script src="/script/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Function button -->
+    <div title="toggle dark mode" style="display: block;" id="theme"><i class="fa fa-adjust"></i></div>
+    <div title="bionic mode" style="display: block;" id="bionic"><i class="fa-solid fa-arrows-to-eye"></i></div>
+    <div title="go to top" style = "display: none;" id = "home"><i class="fa-solid fa-arrow-up"></i></div>
+    
+    <!-- Login table -->
+    <div class="login" style="display: none;">
+        <div>
+            <div>
+                <div class = "flex">
+                    <p>Tên đăng nhập:</p>
+                    <input id = "username" type = "text">
+                </div>
+                <div class="flex">
+                    <p>Mật khẩu:</p>
+                    <input id = "password" type="password">
+                </div>
+                <div style="display: none;" class ="flex register">
+                    <p>Nhập lại mật khẩu:</p>
+                    <input id = "re-password" type="password">
+                </div>
+            </div>
+            <div class = "flex">
+                <div>
+                    <button id = "sign-in" type="button">Đăng nhập</button>
+                </div>
+                <div>
+                    <button id = "show-register" type="button">Đăng ký</button>
+                </div>
+            </div>
+            <p id = "close-login">&times;</p>
+        </div>
+    </div>
+
+    <!-- Toan Huy Express's Logo -->
+    <header>
+        <div><a href="/index.html"><img src="images/the-high-resolution-logo-transparent.png" alt="logo"></a></div>
+    </header>
+
+    <!-- Tool bar -->
+    <nav class="flex">
+        <!-- biểu tượng menu -->
+        <div class="menu-icon" onclick="Menubar()">
+            <i class="fa-solid fa-bars" ></i>
+         </div>
+        <left>
+            <ul class="tools flex">
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Công nghệ</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Khoa học</a></li>
+                <li><a href="#">Giáo dục</a></li>
+                <li><a href="#">Sức khỏe</a></li>
+                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">Kinh tế</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+        </left>
+
+        <right class = "flex">
+            <div class = "flex">
+                <div class = "flex">
+                    <span id = "show-search" class = "fa fa-search"></span>
+                    <div class = "search" style="display: none;">
+                        <input type="search" class = "search-box" placeholder="Nhập từ khóa bạn muốn...">
+                    </div>
+                </div>
+                
+                <div id = "show-login"><span class = "fa fa-user"></span> Đăng nhập</div>
+            </div>
+        </right>
+    </nav>
+
+    <main>
+        <div>
+            <div class="flex">
+                <div>
+                    <p>Khoa học - công nghệ</p>
+                </div>
+                <div>
+                    <p>9:35 02/09/2024</p>
+                </div>
+            </div>
+            <div class="title">
+                <h1>ELON MUSK HÉ LỘ KẾ HOẠCH INTERNET VỆ TINH CHO SMARTPHONE</h1>
+            </div>
+        </div>
+
+        <div >
+            <div class="content">
+                <figure class="">
+                    <img src="/images/musk.jpg" alt="Elon Musk"/>
+                    <figcaption>Tỷ phú Mỹ Elon Musk. Ảnh: Reuters</figcaption>
+                </figure>
+                
+                <div>
+                    <br>
+                    <p>
+                        Elon Musk nói dịch vụ Starlink Cellular sẽ triển khai đầu tiên tại Mỹ và SpaceX đặt mục tiêu hợp tác với ít nhất một nhà mạng ở mỗi nước.
+                    </p>
+                    <br>
+                    <p>
+                        "Dịch vụ Internet kết nối trực tiếp giữa smartphone với Starlink sẽ vận hành độc quyền với T-Mobile ở Mỹ trong năm đầu, sau đó mở rộng sang các nhà mạng khác. Chúng tôi sẽ khởi đầu bằng cách làm việc với một nhà mạng nhất định ở mỗi nước, nhưng hy vọng hợp tác được với toàn bộ nhà mạng", tỷ phú Elon Muúk nói trên X hôm 1/9.
+                    </p>
+                    <br>
+                    <p>
+                        SpaceX, công ty do Musk sáng lập, đầu năm nay xin được giấy phép thử nghiệm Starlink có thể kết nối trực tiếp với smartphone, gọi là Starlink Cellular. Musk cho biết dịch vụ cho phép kết nối điện thoại di động ở mọi nơi trên Trái Đất.
+                    </p>
+                    <br>
+                    <p>
+                        "Đây là giải pháp tuyệt vời cho những địa điểm không có kết nối di động, nhưng không mang ý nghĩa cạnh tranh với tháp di động hiện có trên mặt đất", Musk cho hay.
+                    </p>
+                    <br>
+                    <p>
+                        SpaceX hôm 23/8 thông báo với chính phủ Mỹ về việc hợp tác với T-Mobile để phủ sóng bằng vệ tinh và nhấn mạnh sự sẵn sàng cho dịch vụ thương mại. Công ty cũng cho biết đã phóng gần 130 vệ tinh trong 8 tháng qua và đang có kế hoạch phóng thêm.
+                    </p>
+                    <br>
+                    <p>
+                        Theo thống kê của SpaceX tính đến giữa tháng 10/2023, Starlink có hơn 400.000 người dùng dịch vụ trên toàn cầu. Đang có 3.000 vệ tinh Starlink bao quanh Trái Đất, cung cấp kết nối băng thông rộng cho người dùng, đặc biệt ở vùng nông thôn và địa hình hiểm trở.
+                    </p>
+                    <br>
+                    <p>
+                        Trước đó, Musk tuyên bố mục tiêu của Starlink đến năm 2027 là có 42.000 vệ tinh tham gia vào mạng lưới Internet không gian. Đến nay, SpaceX đã sản xuất hơn một triệu thiết bị đầu cuối dành cho người dùng. Internet vệ tinh của hãng hiện đạt tốc độ 50-150 Mb/giây, thậm chí lên mức 175 Mb/giây ở một số khu vực.
+                    </p>
+                    <br>
+                            
+                    <p style="text-align: right;"> <b>Điệp Anh</b> (theo Teslarati)</p>
+                
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class = "flex">
+        <left>
+            <a href="/index.html" class = "flex">
+                <span>Báo điện tử</span>
+                <img src="/images/the-high-resolution-logo-white-transparent.png" alt="Logo">
+            </a>
+        </left>
+        
+        <right>
+            <div class = "flex">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">RSS</a> 
+                    <span>Theo dõi THExpress trên</span>
+                    <a href="https://www.facebook.com/Oslamelon/"><p class = "fa fa-facebook-square"></p></a>
+            </div>
+        </right>
+    </footer>
+</body>
+</html>

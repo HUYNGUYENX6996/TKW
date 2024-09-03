@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT đạt 200 triệu người dùng hàng tuần</title>
+
+    <link href="/style/news.css" rel="stylesheet" />
+    <link href="/style/stylemobile.css" rel="stylesheet" media="screen and (max-width: 1220px)" />
+    <script src="/script/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Function button -->
+    <div title="toggle dark mode" style="display: block;" id="theme"><i class="fa fa-adjust"></i></div>
+    <div title="bionic mode" style="display: block;" id="bionic"><i class="fa-solid fa-arrows-to-eye"></i></div>
+    <div title="go to top" style = "display: none;" id = "home"><i class="fa-solid fa-arrow-up"></i></div>
+    
+    <!-- Login table -->
+    <div class="login" style="display: none;">
+        <div>
+            <div>
+                <div class = "flex">
+                    <p>Tên đăng nhập:</p>
+                    <input id = "username" type = "text">
+                </div>
+                <div class="flex">
+                    <p>Mật khẩu:</p>
+                    <input id = "password" type="password">
+                </div>
+                <div style="display: none;" class ="flex register">
+                    <p>Nhập lại mật khẩu:</p>
+                    <input id = "re-password" type="password">
+                </div>
+            </div>
+            <div class = "flex">
+                <div>
+                    <button id = "sign-in" type="button">Đăng nhập</button>
+                </div>
+                <div>
+                    <button id = "show-register" type="button">Đăng ký</button>
+                </div>
+            </div>
+            <p id = "close-login">&times;</p>
+        </div>
+    </div>
+
+    <!-- Toan Huy Express's Logo -->
+    <header>
+        <div><a href="/index.html"><img src="images/the-high-resolution-logo-transparent.png" alt="logo"></a></div>
+    </header>
+
+    <!-- Tool bar -->
+    <nav class="flex">
+        <!-- biểu tượng menu -->
+        <div class="menu-icon" onclick="Menubar()">
+            <i class="fa-solid fa-bars" ></i>
+         </div>
+        <left>
+            <ul class="tools flex">
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Công nghệ</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Khoa học</a></li>
+                <li><a href="#">Giáo dục</a></li>
+                <li><a href="#">Sức khỏe</a></li>
+                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">Kinh tế</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+        </left>
+
+        <right class = "flex">
+            <div class = "flex">
+                <div class = "flex">
+                    <span id = "show-search" class = "fa fa-search"></span>
+                    <div class = "search" style="display: none;">
+                        <input type="search" class = "search-box" placeholder="Nhập từ khóa bạn muốn...">
+                    </div>
+                </div>
+                
+                <div id = "show-login"><span class = "fa fa-user"></span> Đăng nhập</div>
+            </div>
+        </right>
+    </nav>
+
+    <main>
+        <div>
+            <div class="flex">
+                <div>
+                    <p>Khoa học - công nghệ</p>
+                </div>
+                <div>
+                    <p>9:35 02/09/2024</p>
+                </div>
+            </div>
+            <div class="title">
+                <h1>CHATGPT ĐẠT 200 TRIỆU NGƯỜI DÙNG HÀNG TUẦN</h1>
+            </div>
+        </div>
+
+        <div >
+            <div class="content">
+                
+                <div>
+                    <br>
+                    <p>
+                        OpenAI cho biết ChatGPT hiện thu hút hơn 200 triệu người dùng hoạt động hàng tuần, tăng từ 100 triệu năm 2023.
+                    </p>
+                    <br>
+                    <p>
+                        ChatGPT tạo nên cơn sốt AI tạo sinh từ cuối 2022 và sức hút của chatbot này vẫn chưa có dấu hiệu đi xuống, khi số lượng người dùng hàng tuần tăng gấp đôi kể từ tháng 11/2023.
+                    </p>
+                    <br>
+                    <p>
+                        OpenAI cũng cho biết 92% công ty trong bảng xếp hạng Fortune 500 đang dùng sản phẩm của họ. Bên cạnh đó, hoạt động sử dụng API tự động của OpenAI cũng tăng gấp đôi kể từ khi mô hình GPT-4o mini được phát hành vào tháng 7.
+                    </p>
+                    <br>
+                    <figure class="">
+                        <img src="/images/minh hoa GPT.png" alt="ChatGPT"/>
+                        <figcaption>Logo ChatGPT hiển thị trên màn hình điện thoại. Ảnh: AFP</figcaption>
+                    </figure>
+                    <br>
+                    <p>
+                        Sam Altman, CEO OpenAI, nói: "Mọi người đang sử dụng công cụ của chúng tôi như một phần của cuộc sống hàng ngày, tạo ra sự khác biệt thực sự trong các lĩnh vực như chăm sóc sức khỏe và giáo dục, dù chỉ để hỗ trợ công việc, giải quyết vấn đề khó khăn, hay khai mở sự sáng tạo".
+                    </p>
+                    <br>
+                    <p>
+                        Cuộc chiến lôi kéo người dùng AI đang diễn ra gay gắt giữa Microsoft, Google, OpenAI và Meta. Các công ty đều muốn người dùng lựa chọn chatbot của họ. Meta cho biết quy mô sử dụng mô hình mã nguồn mở của họ đã tăng gấp đôi từ tháng 5 đến tháng 7 sau khi phát hành Llama 3.1.
+                    </p>
+                    <br>
+                    <p>
+                        Trong khi đó, phân tích của The Information dựa trên tài liệu tài chính nội bộ cho thấy OpenAI đang trên đà chi khoảng 7 tỷ USD cho riêng việc đào tạo mô hình AI và 1,5 tỷ USD cho nhân sự. Chi phí hoạt động cao vọt có thể khiến họ lỗ 5 tỷ USD năm nay.
+                    </p>
+                    <br>
+                    <p>
+                        Còn theo Reuters, công ty đứng sau ChatGPT cũng đang xây dựng một AI có khả năng suy luận nâng cao để tiến đến mô hình AI tổng quát (AGI). Dự án có tên nội bộ "Strawberry", là phần mở rộng của dự án bí ẩn Q*, hứa hẹn có thể thể hiện "phản ứng và suy luận giống người".
+                    </p>
+                    <br>
+                            
+                    <p style="text-align: right;"> <b>Huy Đức</b></p>
+                
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class = "flex">
+        <left>
+            <a href="/index.html" class = "flex">
+                <span>Báo điện tử</span>
+                <img src="/images/the-high-resolution-logo-white-transparent.png" alt="Logo">
+            </a>
+        </left>
+        
+        <right>
+            <div class = "flex">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">RSS</a> 
+                    <span>Theo dõi THExpress trên</span>
+                    <a href="https://www.facebook.com/Oslamelon/"><p class = "fa fa-facebook-square"></p></a>
+            </div>
+        </right>
+    </footer>
+</body>
+</html>
