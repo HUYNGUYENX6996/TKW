@@ -11,13 +11,10 @@
     border: none;
 }
 
-main  div{
-    width: 100% !important;
-}
-
 header img{
     width: 50%;
 }
+    /* THANH NAV */
 
 .menu-icon{
     display: block;
@@ -58,6 +55,12 @@ nav{
     max-height: 500px;
 }
 
+    /* MAIN */
+
+main  div{
+    width: 100% !important;
+}
+
 main{
     border: none;
 }
@@ -81,6 +84,8 @@ main h3{
     padding-right: 12px;
 }
 
+    /* LOGIN */
+
 .login>div {
     width: 60%;
     height: 60%;
@@ -100,6 +105,7 @@ main h3{
     height: 65%;
 }
 
+    /* footer */
 footer img{
     width: 25%;
     border: none;
