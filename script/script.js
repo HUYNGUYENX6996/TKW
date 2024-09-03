@@ -91,35 +91,40 @@ window.addEventListener("load", () => {
 
     let styleDef = document.querySelector("head>link");
 
-    if (localStorage.getItem("dark-mode") === "true") {
-        theme.classList.add("dark");
-        console.warn(styleDef);
-        styleDef.href = "/style/styledark.css";
-        localStorage.setItem("dark-mode", "true");
-    }
-    else {
-        theme.classList.remove("dark");
-        console.warn(styleDef);
-        styleDef.href = "/style/style.css";
-        localStorage.setItem("dark-mode", "false");
-    }
-    
-
-    theme.addEventListener("click", () => {
-
+    if (styleDef.id !== '') {
         if (localStorage.getItem("dark-mode") === "true") {
-            theme.classList.remove("dark");
-            console.warn(styleDef);
-            styleDef.href = "/style/style.css";
-            localStorage.setItem("dark-mode", "false");
-        }
-        else {
             theme.classList.add("dark");
             console.warn(styleDef);
             styleDef.href = "/style/styledark.css";
             localStorage.setItem("dark-mode", "true");
         }
-    });
+        else {
+            theme.classList.remove("dark");
+            console.warn(styleDef);
+            styleDef.href = "/style/style.css";
+            localStorage.setItem("dark-mode", "false");
+        }
+        
+    
+        theme.addEventListener("click", () => {
+    
+            if (localStorage.getItem("dark-mode") === "true") {
+                theme.classList.remove("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/style.css";
+                localStorage.setItem("dark-mode", "false");
+            }
+            else {
+                theme.classList.add("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/styledark.css";
+                localStorage.setItem("dark-mode", "true");
+            }
+        });
+    }
+    else {
+        
+    }
 
     // Fixed nav bar: 
 
