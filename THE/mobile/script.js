@@ -88,38 +88,15 @@ window.addEventListener("load", () => {
     });
 
     // Dark theme function:
-
-    let styleDef = document.querySelector("head>link");
-
-    if (localStorage.getItem("dark-mode") === "true") {
-        theme.classList.add("dark");
-        console.warn(styleDef);
-        styleDef.href = "/style/styledark.css";
-        localStorage.setItem("dark-mode", "true");
-    }
-    else {
-        theme.classList.remove("dark");
-        console.warn(styleDef);
-        styleDef.href = "/style/style.css";
-        localStorage.setItem("dark-mode", "false");
-    }
-    
-
     theme.addEventListener("click", () => {
-
-        if (localStorage.getItem("dark-mode") === "true") {
-            theme.classList.remove("dark");
-            console.warn(styleDef);
-            styleDef.href = "/style/style.css";
-            localStorage.setItem("dark-mode", "false");
-        }
-        else {
-            theme.classList.add("dark");
-            console.warn(styleDef);
-            styleDef.href = "/style/styledark.css";
-            localStorage.setItem("dark-mode", "true");
-        }
+        let styleDark = document.querySelector("head>link");
+        theme.classList.toggle("dark");
+        console.warn(styleDark);
     });
+
+    //
+    //
+    //
 
     // Fixed nav bar: 
 
@@ -210,7 +187,9 @@ window.addEventListener("load", () => {
         }
     });
 
+    
 });
+
 
 function Menubar() {
     const Tools = document.querySelector(".tools");
