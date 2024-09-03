@@ -318,6 +318,10 @@ nav>right #show-login {
 
 /* MAIN */
 
+body {
+    background-color: rgb(27, 27, 27);
+}
+
 main>div {
     margin: auto;
     width: 60%;
@@ -328,9 +332,9 @@ main>div img {
 }
 
 main>div:first-child {
-    background-color: #577c8e;
-    border: 1px solid #2f4157;
-    color:#f5f0ec;
+    background-color: #1f2b41;
+    border: 1px solid #0b111d;
+    color:#a3c5f2;
 }
 
 main>div:first-child h1 {
@@ -346,18 +350,23 @@ main>div:first-child>div.flex {
 }
 
 main>div:last-child {
-    background-color: #c8dae6;
-    border: 1px solid #2f4157;
+    background-color: #334664;
+    border: 1px solid #0b111d;
 }
 
 .content {
     padding: 1rem;
 }
 
+.content p {
+    color: #a3c5f2;
+}
+
 .content figcaption {
     text-align: center;
     font-size: smaller;
     opacity: 70%;
+    color: #a3c5f2;
 }
 
 /* FOOTER */

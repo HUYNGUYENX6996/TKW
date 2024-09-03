@@ -123,7 +123,35 @@ window.addEventListener("load", () => {
         });
     }
     else {
+        if (localStorage.getItem("dark-mode") === "true") {
+            theme.classList.add("dark");
+            console.warn(styleDef);
+            styleDef.href = "/style/newsdark.css";
+            localStorage.setItem("dark-mode", "true");
+        }
+        else {
+            theme.classList.remove("dark");
+            console.warn(styleDef);
+            styleDef.href = "/style/news.css";
+            localStorage.setItem("dark-mode", "false");
+        }
         
+    
+        theme.addEventListener("click", () => {
+    
+            if (localStorage.getItem("dark-mode") === "true") {
+                theme.classList.remove("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/news.css";
+                localStorage.setItem("dark-mode", "false");
+            }
+            else {
+                theme.classList.add("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/newsdark.css";
+                localStorage.setItem("dark-mode", "true");
+            }
+        });
     }
 
     // Fixed nav bar: 
