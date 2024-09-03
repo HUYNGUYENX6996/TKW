@@ -51,7 +51,7 @@ header div {
     display: flex !important ;
 }
 
-/* GO TO TOP */
+/* FUNCTION BUTTON */
 
 #home {
     position: fixed;
@@ -68,7 +68,42 @@ header div {
     cursor: pointer;
 }
 
+#theme {
+    position: fixed;
+    right: 16px;
+    bottom: 128px;
+    background-color: #2f4157;
+    color: #f5f0ec;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+#theme:hover {
+    background-color: #2f4157;
+    color: #f5f0ec;
+    transform: rotate(180deg);
+}
+
+.dark {
+    background-color: #fff !important;
+    color: #000 !important;
+    transform: rotate(180deg);
+}
+
 /* NAVIGATION */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
 
 nav {
     border-top: 1px solid #2f4157;
@@ -125,6 +160,7 @@ nav>right>div>div:first-child {
 
 nav>right>div>div:last-child {
     color: #2f4157;
+    background-color: #fff;
 }
 
 .search-box {

@@ -1,7 +1,17 @@
+NORMAL THEME:
+
 #2f4157 - navy
 #577c8e - teal
 #c8dae6 - sky blue
 #f5f0ec - beige
 #fff - white
 
-rgb(224, 227, 236)
+DARK THEME:
+
+#a3c5f2 - light blue
+#83a2ce - dim blue
+#6582aa - dark blue
+#4b6387 - dark dim blue
+#334664 - dark gray blue
+#1f2b41 - dark dim blue 
+#0b111d - dark blue
