@@ -96,6 +96,21 @@ header div {
     transform: rotate(180deg);
 }
 
+#bionic {
+    position: fixed;
+    right: 16px;
+    bottom: 192px;
+    background-color: #2f4157;
+    color: #f5f0ec;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
 /* NAVIGATION */
 
 .sticky {
