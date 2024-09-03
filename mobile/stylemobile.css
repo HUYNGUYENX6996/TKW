@@ -23,7 +23,6 @@ header img{
     display: block;
 }
 
-
 nav{
     display: none ;
 }
@@ -60,7 +59,7 @@ nav{
 }
 
 main{
-    z-index: 200;
+    border: none;
 }
 
 .relate{
@@ -82,4 +81,60 @@ main h3{
     padding-right: 12px;
 }
 
+.login>div {
+    width: 60%;
+    height: 60%;
+}
 
+.login P{
+    width: 100% !important;
+}
+
+.login > div{
+    width: 70%;
+    left: 13%;
+
+}
+
+.login>div>div:first-child{
+    height: 65%;
+}
+
+footer img{
+    width: 25%;
+    border: none;
+}
+
+footer right a{
+    border: none !important;
+}
+
+footer left a{
+    border: none !important;
+}
+
+footer{
+    border: none;
+    position: relative;
+}
+
+footer left{
+    border: none;
+}
+
+footer right{
+    border: none;
+}
+
+footer right span{
+    text-align: left;
+    width: fit-content;
+    padding-bottom: 10px;
+}
+
+footer right a:last-child{
+    width: fit-content;
+    position: absolute;
+    bottom: 1%;
+    right: 45%;
+}
