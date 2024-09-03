@@ -323,6 +323,8 @@ main>div:last-child {
 
 /* FOOTER */
 
+/* FOOTER */
+
 footer {
     border-top: 1px solid #2f4157;
     border-bottom: 1px solid #2f4157;
@@ -349,7 +351,7 @@ footer a:hover {
 }
 
 footer left img {
-    width: 20px;
+    height: 20px;
 }
 
 footer left {
