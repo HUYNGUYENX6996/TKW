@@ -36,10 +36,27 @@ body {
     font-weight: bold;
 }
 
+/* moblie */
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    background-color: #577c8e;
+    text-align: right;
+    padding-right: 12px;
+}
+
+.tools{
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+}
+
 /* HEADER */
 
 header {
-    background-color: black;
+    background-color: #0b111d;
 }
 
 header img {
@@ -49,6 +66,7 @@ header img {
 header div {
     text-align: center;
     padding: 1rem;
+    background-color: #0b111d;
 }
 
 .register.show {
@@ -61,8 +79,8 @@ header div {
     position: fixed;
     right: 16px;
     bottom: 64px;
-    background-color: #2f4157;
-    color: #f5f0ec;
+    background-color: #a3c5f2;
+    color: #0b111d;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -89,8 +107,8 @@ header div {
     position: fixed;
     right: 16px;
     bottom: 128px;
-    background-color: #2f4157;
-    color: #f5f0ec;
+    background-color: #a3c5f2;
+    color: #0b111d;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -102,14 +120,14 @@ header div {
 }
 
 #theme:hover {
-    background-color: #2f4157;
-    color: #f5f0ec;
+    background-color: #a3c5f2;
+    color: #0b111d;
     transform: rotate(180deg);
 }
 
 .dark {
-    background-color: #fff !important;
-    color: #000 !important;
+    background-color: #a3c5f2 !important;
+    color: #0b111d !important;
     transform: rotate(180deg);
 }
 
@@ -117,8 +135,8 @@ header div {
     position: fixed;
     right: 16px;
     bottom: 192px;
-    background-color: #2f4157;
-    color: #f5f0ec;
+    background-color: #a3c5f2;
+    color: #0b111d;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -134,14 +152,15 @@ header div {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #1f2b41;
 }
 
 nav {
-    border-top: 1px solid #2f4157;
-    border-bottom: 1px solid #2f4157;
+    border-top: 1px solid #0b111d;
+    border-bottom: 1px solid #0b111d;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+    background-color: #1f2b41;
 }
 
 nav ul {
@@ -159,22 +178,22 @@ nav li>a {
 }
 
 nav>left li{
-    border-left: 1px solid #2f4157;
+    border-left: 1px solid #0b111d;
 }
 
 nav>left li:last-child {
-    border-right: 1px solid #2f4157;
+    border-right: 1px solid #0b111d;
 }
 
 nav ul a {
-    background-color: #577c8e;
-    color:#f5f0ec;
+    background-color: #a3c5f2;
+    color: #1f2b41;
     transition: all 0.3s;
 }
 
 nav ul a:hover {
-    background-color: #2f4157;
-    color: #f5f0ec;
+    background-color: #a3c5f2;
+    color: #1f2b41;
     transition: all 0.3s;
 }
 
@@ -185,14 +204,14 @@ nav>right>div>div {
 }
 
 nav>right>div>div:first-child {
-    background-color: #577c8e;
-    color: #f5f0ec;
+    background-color: #a3c5f2;
+    color: #1f2b41;
     border-radius: 3px;
 }
 
 nav>right>div>div:last-child {
-    color: #2f4157;
-    background-color: #fff;
+    background-color: #1f2b41;
+    color: #a3c5f2;
 }
 
 .search-box {
@@ -201,7 +220,7 @@ nav>right>div>div:last-child {
 }
 
 nav>right #show-login {
-    border-right: 1px solid #2f4157;
+    border-right: 1px solid #0b111d;
 }
 
 /* ADS */
@@ -226,15 +245,15 @@ nav>right #show-login {
     left: 25%;
     width: 50%;
     height: 50%;
-    background-color: rgb(225, 225, 225);
-    border: 1px solid #2f4157;
+    background-color: #334664;
+    border: 1px solid #0b111d;
     border-radius: 3px;
 }
 
 .login>div>div:first-child {
     height: 75%;
     align-content: center;
-    border-bottom: 1px solid #2f4157;
+    border-bottom: 1px solid #0b111d;
 }
 
 .login>div>div:first-child div {
@@ -248,7 +267,7 @@ nav>right #show-login {
 
 .login>div>div:first-child p {
     width: 40%;
-    color: #2f4157;
+    color: #a3c5f2;
 }
 
 .login>div>div.flex {
@@ -264,15 +283,15 @@ nav>right #show-login {
 .login>div>div.flex>div>button {
     width: 40%;
     height: 40%;
-    background-color: #577c8e;
-    color: #f5f0ec;
+    background-color: #1f2b41;
+    color: #a3c5f2;
     border: 0;
     cursor: pointer;
     border-radius: 3px;
 }
 
 .login>div>p {
-    color: #2f4157;
+    color: #a3c5f2;
     font-size: 36px;
     position: absolute;
     top: 0;
@@ -282,6 +301,10 @@ nav>right #show-login {
 
 /* MAIN */
 
+body {
+    background-color: rgb(27, 27, 27);
+}
+
 .content {
     margin-bottom: 10px;
 }
@@ -289,8 +312,8 @@ nav>right #show-login {
 .features {
     width: 80%;
     margin: auto;
-    border: 1px solid #2f4157;
-    background-color: #c8dae6;
+    border: 1px solid #0b111d;
+    background-color: #334664;
     padding-bottom: 0.5rem;
 }
 
@@ -298,14 +321,14 @@ nav>right #show-login {
     margin: 0.5rem;
     padding: 0.5rem;
     margin-top: 0;
-    border-bottom: 1px solid #2f4157;
-    color: #2f4157;
+    border-bottom: 1px solid #0b111d;
+    color: #a3c5f2;
 }
 
 .relate>a {
     padding-left: 1rem;
     padding-bottom: 1rem;
-    color: #2f4157;
+    color: #a3c5f2;
 }
 
 .feature img {
@@ -313,7 +336,7 @@ nav>right #show-login {
 }
 
 .feature h3 {
-    color:#2f4157;
+    color:#a3c5f2;
 }
 
 .feature h3:hover {
@@ -321,13 +344,13 @@ nav>right #show-login {
     transition: all 0.3s;
 }
 
-.feature summary {
-    color: black;
+.feature p {
+    color: #83a2ce;
 }
 
 .feature>div {
     padding-right: 1rem;
-    border-right: 1px solid #2f4157;
+    border-right: 1px solid #0b111d;
     margin-right: 1rem;
     width: 35%;
 }
@@ -350,9 +373,9 @@ nav>right #show-login {
 /* FOOTER */
 
 footer {
-    border-top: 1px solid #2f4157;
-    border-bottom: 1px solid #2f4157;
-    background-color: #577c8e;
+    border-top: 1px solid #0b111d;
+    border-bottom: 1px solid #0b111d;
+    background-color: #a3c5f2;
     justify-content: space-between;
 }
 
@@ -360,17 +383,18 @@ footer right span {
     text-align: center;
     align-content: center;
     padding-left: 10px;
-    color: #c8dae6;
+    color: #0b111d;
 }
 
 footer a {
     display:block;
     padding: 0.7rem;
+    color: #1f2b41;
 }
 
 footer a:hover {
-    background-color: #2f4157;
-    color: #f5f0ec;
+    background-color: #4b6387;
+    color: #a3c5f2;
     transition: 0.2s ease-in;
 }
 
@@ -383,20 +407,20 @@ footer left {
 }
 
 footer left {
-    border-left: 1px solid #2f4157;
+    border-left: 1px solid #0b111d;
 }
 
 footer right {
-    border-right: 1px solid #2f4157;
+    border-right: 1px solid #0b111d;
     padding: 0.3rem;
 }
 
 footer right a:first-child {
-    border-left: 1px solid #2f4157;
+    border-left: 1px solid #0b111d;
 }
 
 footer right a {
-    border-right: 1px solid #2f4157;
+    border-right: 1px solid #0b111d;
 }
 
 footer right a:last-child {
