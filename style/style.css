@@ -68,6 +68,19 @@ header div {
     cursor: pointer;
 }
 
+@keyframes shlow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#home.show {
+    animation: shlow 0.5s ease-in-out;
+}
+
 #theme {
     position: fixed;
     right: 16px;
