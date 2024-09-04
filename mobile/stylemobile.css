@@ -18,6 +18,9 @@ header img{
 
 .menu-icon{
     display: block;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #2f4157;
 }
 
 nav{
@@ -36,11 +39,6 @@ nav{
     margin-top: 0;
 }
 
-.tools a:hover {
-    background-color: #2f4157 !important;
-    transition: all 0.3s !important;
-}
-
 .tools >li a{
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -54,6 +52,8 @@ nav{
 .tools.active {
     max-height: 500px;
 }
+
+.options 
 
     /* MAIN */
 
