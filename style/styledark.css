@@ -299,6 +299,11 @@ nav>right #show-login {
     cursor: pointer;
 }
 
+    /* new */
+.login div.flex{
+    flex-direction: row;
+}
+
 /* MAIN */
 
 body {

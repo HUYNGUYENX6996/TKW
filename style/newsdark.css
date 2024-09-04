@@ -316,6 +316,11 @@ nav>right #show-login {
     cursor: pointer;
 }
 
+    /* new */
+.login div.flex{
+    flex-direction: row;
+}
+
 /* MAIN */
 
 body {
@@ -424,4 +429,11 @@ footer right a {
 
 footer right a:last-child {
     border-right: 0;
+}
+
+@media (max-width: 600px){
+    div.content{
+        margin: 0;
+        padding: 0;
+    }
 }

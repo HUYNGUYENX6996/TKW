@@ -46,8 +46,8 @@
         border: none !important;
         width: fit-content;
         position: absolute;
-        right: 14%;
-        bottom: 20%;
+        right: 1%;
+        bottom: 1%;
         margin-bottom: 2px;
         background-color: #577c8e;
         font-size: larger;
@@ -58,7 +58,7 @@
         width: fit-content;
         padding: 0;
         position:  absolute;
-        bottom: 20%;
+        bottom: 2%;
         left: 2%;
     }
     
