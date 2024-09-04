@@ -370,6 +370,50 @@ body {
     width: 15%;
 }
 
+.latest {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #0b111d;
+    background-color: #4b6387;
+    padding-bottom: 0.5rem;
+}
+
+.latest>h1 {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0;
+    border-bottom: 1px solid #0b111d;
+    color: #a3c5f2;
+}
+
+.latest img {
+    width: 100%;
+}
+
+.latest>div {
+    padding: 0.5rem;
+    border-bottom: 1px solid #0b111d;
+    margin: 0.5rem;
+}
+
+.latest>div:last-child {
+    border-bottom: 0;
+}
+
+.latest h3 {
+    color:#a3c5f2;
+    font-size: 24px;
+}
+
+.latest h3:hover {
+    color: maroon;
+    transition: all 0.3s;
+}
+
+.latest>div p {
+    color: #a3c5f2;
+}
+
 /* FOOTER */
 
 footer {
