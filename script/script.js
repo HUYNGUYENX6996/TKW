@@ -27,10 +27,23 @@ window.addEventListener("load", () => {
     let password = document.getElementById("password");
     let rePassword = document.getElementById("re-password");
     
+    let search2 = document.getElementById("show-search2");
+    let searchSh2 = document.querySelector(".search2");
+    let searchBox2 = document.querySelector(".search-box2");
+
+    let login2 = document.getElementById("show-login2");
+
     // Search function:
 
     search.addEventListener("click", () => {
         searchSh.classList.toggle("show");
+        for( let ctn of contentTitle) {
+            ctn.style.color = "#2f4157";
+        }
+    });
+
+    search2.addEventListener("click", () => {
+        searchSh2.classList.toggle("show");
         for( let ctn of contentTitle) {
             ctn.style.color = "#2f4157";
         }
@@ -56,9 +69,33 @@ window.addEventListener("load", () => {
         searchBox.value = '';
     });
 
+    searchBox2.addEventListener("change", () => {
+        console.log(searchBox2.value);
+        for( let ctn of contentTitle) {
+            console.log(10000);
+            ctn.style.color = "#2f4157";
+            if (ctn.innerHTML.match(searchBox2.value) && searchBox2.value !== '') {
+                console.log("access");
+                ctn.style.color = "firebrick";
+            }
+        }
+        for( let ctnSmr of contentSummary) {
+            ctnSmr.style.color = "black";
+            if (ctnSmr.innerHTML.match(searchBox2.value) && searchBox2.value !== '') {
+                console.log("access");
+                ctnSmr.style.color = "firebrick";
+            }
+        }
+        searchBox2.value = '';
+    });
+
     // Login funciton:
 
     login.addEventListener("click", () => {
+        loginSh.classList.toggle("show");
+    });
+
+    login2.addEventListener("click", () => {
         loginSh.classList.toggle("show");
     });
 
