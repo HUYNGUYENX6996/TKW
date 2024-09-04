@@ -16,9 +16,15 @@ header img{
 }
     /* THANH NAV */
 
+.sticky {
+    width: 98%;
+    left: 0%;
+}
+
 .options{
     border: none !important;
     position: relative;
+    font-size: 25px;
 }
 
 .options>div:last-child>div{
