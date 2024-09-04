@@ -33,6 +33,23 @@ body {
     margin: 0;
 }
 
+/* moblie */
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    background-color: #577c8e;
+    text-align: right;
+    padding-right: 12px;
+}
+
+.tools{
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+}
+
 /* HEADER */
 
 header {
@@ -118,6 +135,13 @@ header div {
 
 /* NAVIGATION */
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
 nav {
     border-top: 1px solid #2f4157;
     border-bottom: 1px solid #2f4157;
@@ -173,6 +197,10 @@ nav>right>div>div:first-child {
 
 nav>right>div>div:last-child {
     color: #2f4157;
+}
+
+nav>right>div>div:last-child div {
+    padding-left: 3px;
 }
 
 .search-box {
@@ -306,6 +334,8 @@ main>div:last-child {
 
 /* FOOTER */
 
+/* FOOTER */
+
 footer {
     border-top: 1px solid #2f4157;
     border-bottom: 1px solid #2f4157;
@@ -332,7 +362,7 @@ footer a:hover {
 }
 
 footer left img {
-    width: 20px;
+    height: 20px;
 }
 
 footer left {
@@ -358,4 +388,11 @@ footer right a {
 
 footer right a:last-child {
     border-right: 0;
+}
+
+@media (max-width: 600px){
+    div.content{
+        margin: 0;
+        padding: 0;
+    }
 }

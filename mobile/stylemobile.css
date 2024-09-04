@@ -8,7 +8,239 @@
 
 .feature{
     width: 100%;
-    border: none;
+    border: none;.ads{
+        display: none;
+    }
+    
+    .flex{
+        flex-direction: column;
+    }
+    
+    .feature{
+        width: 100%;
+        border: none;
+    }
+    
+    header img{
+        width: 50%;
+    }
+        /* THANH NAV */
+    
+    .sticky {
+        width: 98%;
+        left: 0%;
+    }
+    
+    .options{
+        border: none !important;
+        position: relative;
+        font-size: 25px;
+    }
+    
+    .options>div:last-child>div{
+        display: none;
+    }
+    
+    nav>right>div>div:last-child {
+        padding: 0;
+        border: none !important;
+        width: fit-content;
+        position: absolute;
+        right: 14%;
+        bottom: 20%;
+        margin-bottom: 2px;
+        background-color: #577c8e;
+        font-size: larger;
+    }
+    
+    nav>right>div.options>div:first-child {
+        flex-direction: row;
+        width: fit-content;
+        padding: 0;
+        position:  absolute;
+        bottom: 20%;
+        left: 2%;
+    }
+    
+    div.menu-icon{
+        width: 100%;
+    }
+    
+    div.menu-icon i{
+        padding-right: 22px;
+    }
+    
+    .menu-icon{
+        display: block;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-color: #2f4157;
+        padding: 0;
+        width: 100%;
+    }
+    
+    nav{
+        display: none ;
+    }
+    
+    .tools{
+        flex-direction: column;
+        position: relative;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        margin-top: 0;
+    }
+    
+    .tools >li a{
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-color: #2f4157;
+    }
+    
+    .tools li{
+        border:none;
+    }
+    
+    .tools.active {
+        max-height: 500px;
+    }
+    
+        /* MAIN */
+    
+    .latest div{
+        margin: 0;
+        padding: 0;
+    }
+    
+    main  div{
+        width: 100% !important;
+    }
+    
+    main{
+        border: none;
+    }
+    
+    .relate{
+        display: none;
+    }
+    
+    div.feature>div:first-child{
+        padding: 0;
+    }
+    
+    main p{
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+    }
+    
+    main h3{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+        /* LOGIN */
+    
+    .login>div {
+        width: 60%;
+        height: 60%;
+    }
+    
+    .login P{
+        width: 100% !important;
+    }
+    
+    .login > div{
+        width: 70%;
+        left: 13%;
+    
+    }
+    
+    .login>div>div:first-child{
+        height: 65%;
+    }
+    
+        /* footer */
+    footer img{
+        width: 25%;
+        border: none;
+    }
+    
+    footer right a{
+        border: none !important;
+    }
+    
+    footer left a{
+        border: none !important;
+    }
+    
+    footer{
+        border: none;
+        position: relative;
+    }
+    
+    footer left{
+        border: none;
+    }
+    
+    footer right{
+        border: none;
+    }
+    
+    footer right span{
+        text-align: left;
+        width: fit-content;
+        padding-bottom: 10px;
+    }
+    
+    footer right a:last-child{
+        width: fit-content;
+        position: absolute;
+        bottom: 1%;
+        right: 45%;
+    }
+    
+        /* BUTTON */
+    
+    #theme{
+        z-index: 2000;
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        align-content: center;
+        transition: transform 1s;
+        right: 5%;
+        border-radius: 50%;
+    }
+    
+    #bionic{
+        z-index: 2000;
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        align-content: center;
+        transition: transform 1s;
+        right: 5%;
+        border-radius: 50%;
+    }
+    
+    #home{
+        z-index: 2000;
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        align-content: center;
+        transition: transform 1s;
+        right: 5%;
+        border-radius: 50%;
+    }
 }
 
 header img{
