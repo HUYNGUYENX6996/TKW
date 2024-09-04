@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toàn Huy Express - Trang báo uy tín VN</title>
 
-    <link href="style.css" rel="stylesheet" />
-    <link href="stylemobile.css" rel="stylesheet" media="screen and (max-width: 600px)" />
+    <link id = "main" href="style.css" rel="stylesheet" />
+    <link href="stylemobile.css" rel="stylesheet" media="screen and (max-width: 1220px)" />
     <script src="script.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -17,7 +17,7 @@
 <body>
     <!-- Function button -->
     <div title="toggle dark mode" style="display: block;" id="theme"><i class="fa fa-adjust"></i></div>
-    <div title="bionic mode" style="display: block;" id="bionic"><i class="fa-solid fa-arrows-to-eye"></i></div>
+    <div title="bionic mode" style="display: none;" id="bionic"><i class="fa-solid fa-arrows-to-eye"></i></div>
     <div title="go to top" style = "display: none;" id = "home"><i class="fa-solid fa-arrow-up"></i></div>
 
     <!-- Login table -->
@@ -51,14 +51,14 @@
 
     <!-- Toan Huy Express's Logo -->
     <header>
-        <div><a href="/index.html"><img src="../images/the-high-resolution-logo-transparent.png" alt="logo"></a></div>
+        <div><a href="/index.html"><img src="images/the-high-resolution-logo-transparent.png" alt="logo"></a></div>
     </header>
 
     <!-- Tool bar -->
     <nav class="flex">
         <!-- biểu tượng menu -->
-        <div class="menu-icon" onclick="Menubar()">
-           <i class="fa-solid fa-bars" ></i>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="Menubar()"></i>
         </div>
         <left>
             <ul class="tools flex">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 
-                <div id = "show-login"><span class = "fa fa-user"></span>Đăng nhập</div>
+                <div class="flex" id = "show-login"><span class = "fa fa-user"></span> <div>Đăng nhập</div></div>
             </div>
         </right>
     </nav>
@@ -98,55 +98,25 @@
     <main class="flex">
         <div class="contents">
             <div class="content">
-                <div class="features">
-                    <h1 class="title"> Khoa học - Công nghệ</h1>
-                    <div class="relate flex">
-                        <a href="#">Khoa học</a>
-                        <a href="#">Công nghệ</a>
-                        <a href="#">Sản phẩm</a>
-                        <a href="#">Việt Nam</a>
-                        <a href="#">Quốc tế</a>
+                <div class="latest">
+                    <h1 class="title"> Tin mới nhất trên THExpress</h1>
+                    <div>
+                        <a href="/news7.html">
+                            <img src="/images/hoathach.jpg" alt="news_logo">
+                            <h3>Hóa thạch bò biển tiết lộ khả năng tàn sát của đối thủ</h3>
+                        </a>
+                        <p>Venezuela_Hóa thạch bò biển niên đại 20 triệu năm có những vết răng của cả cá sấu lẫn cá mập, hé lộ chuyến săn mồi dữ dội thời cổ đại.</p>
                     </div>
-
-                    <div class="feature flex">
-        
-                        <div>
-                            <a href="new1.html">
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
-                            </a>
-                            <p>Bill Gates, Mark Zuckerberg hay Jeff Bezos có cách khác nhau để nuôi dạy con cái, từ quy định thời gian sử dụng smartphone, máy tính đến làm việc nhà.</p>
-                        </div>
-        
-                        <div>
-                            <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
-                            </div>
-
-                            <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
-                            </div>
-
-                        </div>
-                        
-                        <div>
-                            <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
-                            </div>
-
-                            <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
-                            </div>
-
-                        </div>
-
+    
+                    <div>
+                        <a href="/news8.html">
+                            <img src="/images/minh hoa GPT.png" alt="news_logo">
+                            <h3>ChatGPT đạt 200 triệu người dùng hàng tuần</h3>
+                        </a>
+                        <p>OpenAI cho biết ChatGPT hiện thu hút hơn 200 triệu người dùng hoạt động hàng tuần, tăng từ 100 triệu năm 2023. ChatGPT tạo nên cơn sốt AI tạo sinh từ cuối 2022 và sức hút của chatbot này vẫn chưa có dấu hiệu đi xuống, khi số lượng người dùng hàng tuần tăng gấp đôi kể từ tháng 11/2023.</p>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="content">
@@ -163,33 +133,50 @@
                     <div class="feature flex">
         
                         <div>
-                            <img src="../images/zuck.jpg" alt="news_logo">
-                            <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
+                            <a href="/news1.html">
+                                <img src="images/zuck.jpg" alt="news_logo">
+                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
+                            </a>
                             <p>Bill Gates, Mark Zuckerberg hay Jeff Bezos có cách khác nhau để nuôi dạy con cái, từ quy định thời gian sử dụng smartphone, máy tính đến làm việc nhà.</p>
                         </div>
         
                         <div>
                             <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
+                                <a href="/news2.html">
+                                    <img src="/images/lò phản ứng.jpg" alt="news_logo">
+                                    <h3>Lò nhiệt hạch sản xuất điện công suất 100 MW</h3>
+                                </a>
                             </div>
 
                             <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
+                                <a href="/news3.html">
+                                    <img src="/images/Giao diện X .jpg" alt="news_logo">
+                                    <h3>Nhiều người Brazil cảm thấy 'mất kết nối' khi X bị cấm</h3>
+                                </a>                            
                             </div>
 
                         </div>
                         
                         <div>
                             <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
+                                <a href="/news4.html">
+                                    <img src="/images/Oura Ring.jpg" alt="news_logo">
+                                    <h3>Sự trỗi dậy của nhẫn thông minh</h3>
+                                </a>                            
                             </div>
 
                             <div>
-                                <img src="../images/zuck.jpg" alt="news_logo">
-                                <h3>Tỉ phú công nghệ kiểm soát thiết bị của con thế nào?</h3>
+                                <a href="/news5.html">
+                                    <img src="/images/musk.jpg" alt="news_logo">
+                                    <h3>Elon Musk hé lộ kế hoạch Internet vệ tinh cho smartphone</h3>
+                                </a>                            
+                            </div>
+
+                            <div>
+                                <a href="/news6.html">
+                                    <img src="/images/Toshiba.png" alt="news_logo">
+                                    <h3>6 máy lọc nước có công nghệ giữ khoáng nổi bật</h3>
+                                </a>                            
                             </div>
 
                         </div>
@@ -213,7 +200,7 @@
         
         <right>
             <div class = "flex">
-                <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Điều khoản sử dụng</a>
                     <a href="#">Chính sách bảo mật</a>
                     <a href="#">Cookies</a>
                     <a href="#">RSS</a> 

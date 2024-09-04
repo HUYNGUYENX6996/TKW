@@ -88,15 +88,71 @@ window.addEventListener("load", () => {
     });
 
     // Dark theme function:
-    theme.addEventListener("click", () => {
-        let styleDark = document.querySelector("head>link");
-        theme.classList.toggle("dark");
-        console.warn(styleDark);
-    });
 
-    //
-    //
-    //
+    let styleDef = document.querySelector("head>link");
+
+    if (styleDef.id !== '') {
+        if (localStorage.getItem("dark-mode") === "true") {
+            theme.classList.add("dark");
+            console.warn(styleDef);
+            styleDef.href = "/style/styledark.css";
+            localStorage.setItem("dark-mode", "true");
+        }
+        else {
+            theme.classList.remove("dark");
+            console.warn(styleDef);
+            styleDef.href = "/style/style.css";
+            localStorage.setItem("dark-mode", "false");
+        }
+        
+    
+        theme.addEventListener("click", () => {
+    
+            if (localStorage.getItem("dark-mode") === "true") {
+                theme.classList.remove("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/style.css";
+                localStorage.setItem("dark-mode", "false");
+            }
+            else {
+                theme.classList.add("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/styledark.css";
+                localStorage.setItem("dark-mode", "true");
+            }
+        });
+    }
+    else {
+        if (localStorage.getItem("dark-mode") === "true") {
+            theme.classList.add("dark");
+            console.warn(styleDef);
+            styleDef.href = "/style/newsdark.css";
+            localStorage.setItem("dark-mode", "true");
+        }
+        else {
+            theme.classList.remove("dark");
+            console.warn(styleDef);
+            styleDef.href = "/style/news.css";
+            localStorage.setItem("dark-mode", "false");
+        }
+        
+    
+        theme.addEventListener("click", () => {
+    
+            if (localStorage.getItem("dark-mode") === "true") {
+                theme.classList.remove("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/news.css";
+                localStorage.setItem("dark-mode", "false");
+            }
+            else {
+                theme.classList.add("dark");
+                console.warn(styleDef);
+                styleDef.href = "/style/newsdark.css";
+                localStorage.setItem("dark-mode", "true");
+            }
+        });
+    }
 
     // Fixed nav bar: 
 
@@ -187,9 +243,7 @@ window.addEventListener("load", () => {
         }
     });
 
-    
 });
-
 
 function Menubar() {
     const Tools = document.querySelector(".tools");
