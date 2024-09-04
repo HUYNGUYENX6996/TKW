@@ -58,7 +58,16 @@
     <nav class="flex">
         <!-- biểu tượng menu -->
         <div class="menu-icon">
-            <i class="fa-solid fa-bars" onclick="Menubar()"></i>
+            <left>
+                <div class = "search" style="display: none;">
+                    <input type="search" class = "search-box" placeholder="Nhập từ khóa bạn muốn...">
+                </div>
+                <span id = "show-search" class = "fa fa-search"></span>
+            </left>
+            <right>
+                <div class="flex" id = "show-login"><span class = "fa fa-user"></span></div>
+                <i class="fa-solid fa-bars" onclick="Menubar()"></i>
+            </right>
         </div>
         <left>
             <ul class="tools flex">
