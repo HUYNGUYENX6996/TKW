@@ -95,13 +95,13 @@ window.addEventListener("load", () => {
         if (localStorage.getItem("dark-mode") === "true") {
             theme.classList.add("dark");
             console.warn(styleDef);
-            styleDef.href = "/style/styledark.css";
+            styleDef.href = "./style/styledark.css";
             localStorage.setItem("dark-mode", "true");
         }
         else {
             theme.classList.remove("dark");
             console.warn(styleDef);
-            styleDef.href = "/style/style.css";
+            styleDef.href = "./style/style.css";
             localStorage.setItem("dark-mode", "false");
         }
         
@@ -111,13 +111,13 @@ window.addEventListener("load", () => {
             if (localStorage.getItem("dark-mode") === "true") {
                 theme.classList.remove("dark");
                 console.warn(styleDef);
-                styleDef.href = "/style/style.css";
+                styleDef.href = "./style/style.css";
                 localStorage.setItem("dark-mode", "false");
             }
             else {
                 theme.classList.add("dark");
                 console.warn(styleDef);
-                styleDef.href = "/style/styledark.css";
+                styleDef.href = "./style/styledark.css";
                 localStorage.setItem("dark-mode", "true");
             }
         });
@@ -126,13 +126,13 @@ window.addEventListener("load", () => {
         if (localStorage.getItem("dark-mode") === "true") {
             theme.classList.add("dark");
             console.warn(styleDef);
-            styleDef.href = "/style/newsdark.css";
+            styleDef.href = "./style/newsdark.css";
             localStorage.setItem("dark-mode", "true");
         }
         else {
             theme.classList.remove("dark");
             console.warn(styleDef);
-            styleDef.href = "/style/news.css";
+            styleDef.href = "./style/news.css";
             localStorage.setItem("dark-mode", "false");
         }
         
@@ -142,13 +142,13 @@ window.addEventListener("load", () => {
             if (localStorage.getItem("dark-mode") === "true") {
                 theme.classList.remove("dark");
                 console.warn(styleDef);
-                styleDef.href = "/style/news.css";
+                styleDef.href = "./style/news.css";
                 localStorage.setItem("dark-mode", "false");
             }
             else {
                 theme.classList.add("dark");
                 console.warn(styleDef);
-                styleDef.href = "/style/newsdark.css";
+                styleDef.href = "./style/newsdark.css";
                 localStorage.setItem("dark-mode", "true");
             }
         });
