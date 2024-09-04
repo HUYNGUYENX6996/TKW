@@ -262,6 +262,13 @@ function Menubar() {
             tool.classList.remove("active");
             tool.style.maxHeight = "0";
         }
+
+        // const right = document.querySelector("nav.flex>right");
+        // if(window.scrollY > 0){
+        //     right.style.display = "none"
+        // }else{
+        //     right.style.display = "block"
+        // }
     }
 }
 

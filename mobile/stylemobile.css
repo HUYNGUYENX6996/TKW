@@ -144,7 +144,7 @@
     }
     
         /* LOGIN */
-    
+
     .login>div {
         width: 60%;
         height: 60%;
@@ -269,10 +269,9 @@ nav>right>div>div:last-child {
     width: fit-content;
     position: absolute;
     right: 14%;
-    bottom: 20%;
-    margin-bottom: 2px;
+    bottom: 1%;
+    margin-bottom: 3.5px;
     background-color: #577c8e;
-    font-size: larger;
 }
 
 nav>right>div.options>div:first-child {
@@ -280,8 +279,11 @@ nav>right>div.options>div:first-child {
     width: fit-content;
     padding: 0;
     position:  absolute;
-    bottom: 20%;
+    bottom: 1%;
     left: 2%;
+    font-size: 18px;
+    background-color: none;
+    margin-bottom: 8px;
 }
 
 div.menu-icon{
