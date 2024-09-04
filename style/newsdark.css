@@ -231,6 +231,10 @@ nav>right>div>div:last-child {
     color: #a3c5f2;
 }
 
+nav>right>div>div:last-child div {
+    padding-left: 3px;
+}
+
 .search-box {
     border: 0;
     margin-left: 10px;

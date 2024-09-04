@@ -334,8 +334,6 @@ main>div:last-child {
 
 /* FOOTER */
 
-/* FOOTER */
-
 footer {
     border-top: 1px solid #2f4157;
     border-bottom: 1px solid #2f4157;
@@ -388,11 +386,4 @@ footer right a {
 
 footer right a:last-child {
     border-right: 0;
-}
-
-@media (max-width: 600px){
-    div.content{
-        margin: 0;
-        padding: 0;
-    }
 }

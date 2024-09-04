@@ -255,4 +255,12 @@ function Menubar() {
         Tools.classList.add("active");
         Tools.style.maxHeight = Tools.scrollHeight + "px";
     }
+
+    window.onscroll = function(){
+        const tool =document.querySelector(".tools");
+        if(tool.classList.contains("active")){
+            tool.classList.remove("active");
+            tool.style.maxHeight = "0";
+        }
+    }
 }
