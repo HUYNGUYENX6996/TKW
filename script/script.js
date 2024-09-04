@@ -256,3 +256,24 @@ function Menubar() {
         Tools.style.maxHeight = Tools.scrollHeight + "px";
     }
 }
+
+window.onscroll = function() {
+    document.getElementById("show-search").style.display = 'none';
+    const tool = document.querySelector(".tools");
+    if (tool.classList.contains("active")) {
+        tool.classList.remove("active");
+        tool.style.maxHeight = "0";
+    }
+    
+    const search = document.getElementById("show-search");
+    const login = document.querySelector("nav>right>div>div:last-child");
+
+    if (window.scrollY > 0) {
+        search.style.display = "none";
+        login.style.display = "none";
+    } else{
+        search.style.display = "block";
+        login.style.display = "block";
+
+    }
+};

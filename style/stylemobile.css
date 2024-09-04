@@ -16,8 +16,50 @@ header img{
 }
     /* THANH NAV */
 
+.options{
+    border: none !important;
+}
+
+nav>right>div.options>div:last-child>div{
+    display: none;
+}
+
+nav>right>div>div:last-child {
+    padding: 0;
+    border: none !important;
+    width: fit-content;
+    position: absolute;
+    right: 14%;
+    top: 15.6%;
+    margin-bottom: 2px;
+    background-color: #577c8e;
+    font-size: larger;
+}
+
+nav>right>div.options>div:first-child {
+    flex-direction: row;
+    width: fit-content;
+    padding: 0;
+    position:  absolute;
+    top: 15.6%;
+    left: 2%;
+}
+
+div.menu-icon{
+    width: 100%;
+}
+
+div.menu-icon i{
+    padding-right: 22px;
+}
+
 .menu-icon{
     display: block;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #2f4157;
+    padding: 0;
+    width: 100%;
 }
 
 nav{
@@ -36,11 +78,6 @@ nav{
     margin-top: 0;
 }
 
-.tools a:hover {
-    background-color: #2f4157 !important;
-    transition: all 0.3s !important;
-}
-
 .tools >li a{
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -56,6 +93,11 @@ nav{
 }
 
     /* MAIN */
+
+.latest div{
+    margin: 0;
+    padding: 0;
+}
 
 main  div{
     width: 100% !important;
@@ -143,4 +185,42 @@ footer right a:last-child{
     position: absolute;
     bottom: 1%;
     right: 45%;
+}
+
+    /* BUTTON */
+
+#theme{
+    z-index: 2000;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    transition: transform 1s;
+    right: 5%;
+    border-radius: 50%;
+}
+
+#bionic{
+    z-index: 2000;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    transition: transform 1s;
+    right: 5%;
+    border-radius: 50%;
+}
+
+#home{
+    z-index: 2000;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    transition: transform 1s;
+    right: 5%;
+    border-radius: 50%;
 }
