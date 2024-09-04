@@ -431,9 +431,9 @@ footer right a:last-child {
     border-right: 0;
 }
 
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     div.content{
         margin: 0;
         padding: 0;
     }
-}
+} */

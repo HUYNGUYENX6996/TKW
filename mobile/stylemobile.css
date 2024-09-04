@@ -8,7 +8,9 @@
 
 .feature{
     width: 100%;
-    border: none;.ads{
+    border: none;
+}
+    .ads{
         display: none;
     }
     
@@ -241,7 +243,7 @@
         right: 5%;
         border-radius: 50%;
     }
-}
+
 
 header img{
     width: 50%;
@@ -464,4 +466,9 @@ footer right a:last-child{
     transition: transform 1s;
     right: 5%;
     border-radius: 50%;
+}
+
+div.content{
+    margin: 0;
+    padding: 0;
 }
