@@ -18,9 +18,10 @@ header img{
 
 .options{
     border: none !important;
+    position: relative;
 }
 
-nav>right>div.options>div:last-child>div{
+.options>div:last-child>div{
     display: none;
 }
 
@@ -30,7 +31,7 @@ nav>right>div>div:last-child {
     width: fit-content;
     position: absolute;
     right: 14%;
-    top: 15.6%;
+    bottom: 20%;
     margin-bottom: 2px;
     background-color: #577c8e;
     font-size: larger;
@@ -41,7 +42,7 @@ nav>right>div.options>div:first-child {
     width: fit-content;
     padding: 0;
     position:  absolute;
-    top: 15.6%;
+    bottom: 20%;
     left: 2%;
 }
 

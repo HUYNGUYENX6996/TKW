@@ -135,6 +135,13 @@ header div {
 
 /* NAVIGATION */
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
 nav {
     border-top: 1px solid #2f4157;
     border-bottom: 1px solid #2f4157;
